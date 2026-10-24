@@ -232,7 +232,7 @@ export const priorityItems = [
     ),
   },
   {
-    title: "Openness to Experience - Tinggi",
+    title: "Openness to Experience – Tinggi",
     description: "",
     ctaLabel: "Pelajari Lebih Lanjut",
     ctaHref: "https://satupersen.net/psikotes-online-gratis/tes-ocean/result/6ab49ac4d1f92d000173080d",
@@ -396,7 +396,7 @@ export default function PersonalityTraitsApp({
         <section id="mbti" className="pt-[15pt] pb-0 bg-transparent w-full mb-8">
           <div className="w-full px-[10pt]">
             <div className="flex flex-col items-center justify-center gap-1 mt-[7pt] mb-[18pt]">
-              <h2 className="text-xl md:text-2xl font-bold text-[#3D3D3D] dark:text-[#F2F0EF]">Myers-Briggs Type Indicator</h2>
+              <h2 className="text-xl md:text-2xl font-bold text-[#3D3D3D] dark:text-[#F2F0EF]">Myers–Briggs Type Indicator</h2>
               <p className="text-sm font-serif text-[#3D3D3D] dark:text-[#F2F0EF] text-center">Introverted (I) and Intuitive (N) as Core Cognitive Domain</p>
             </div>
             

@@ -20,7 +20,7 @@ const data = {
     ]
   },
   internships: [
-    { year: "", company: "PT Astra International Tbk", companyLogo: "https://dhnaath.com/wp-content/uploads/2026/08/image.webp", role: <><span>Toyota Sales Operation</span><span>TSO-Auto2000</span></>, rightTitle: "Asst. Partman", location: "", href: "#", isPresent: false, logoBg: "bg-red-600", logoColor: "text-[#F2F0EF]", initials: "A", 
+    { year: "", company: "PT Astra International Tbk", companyLogo: "https://dhnaath.com/wp-content/uploads/2026/08/image.webp", role: <><span>Toyota Sales Operation</span><span>TSO–Auto2000</span></>, rightTitle: "Asst. Partman", location: "", href: "#", isPresent: false, logoBg: "bg-red-600", logoColor: "text-[#F2F0EF]", initials: "A", 
       details: (
       <>
         <p className="font-semibold text-[#3D3D3D] dark:text-[#F2F0EF] mb-1 text-[0.8125rem] font-calibri">Jenis Pekerjaan:</p>
@@ -216,7 +216,7 @@ const data = {
     ) }
   ],
   freelanceWork: [
-    { year: "", company: "Prudential", companyLogo: "https://dhnaath.com/wp-content/uploads/2026/08/2-1.webp", role: <><span>Life Assurance (PLA)</span><span>Sharia Life Assurance (PSLA)</span></>, rightTitle: "Life Insurance Agent", location: "", href: "#", isPresent: false, logoBg: "bg-red-600", logoColor: "text-[#F2F0EF]", initials: "P", 
+    { year: "", company: "Prudential", companyLogo: "https://dhnaath.com/wp-content/uploads/2026/08/2-1.webp", role: <><span>Life Assurance (PLA)</span><span>Sharia Life Assurance (PSLA)</span></>, rightTitle: "Insurance Agent", location: "", href: "#", isPresent: false, logoBg: "bg-red-600", logoColor: "text-[#F2F0EF]", initials: "P", 
       details: (
       <>
         <p className="font-semibold text-[#3D3D3D] dark:text-[#F2F0EF] mb-1 text-[0.8125rem] font-calibri">Jenis Pekerjaan:</p>
@@ -226,7 +226,7 @@ const data = {
           <li>Menganalisis profil risiko, tujuan keuangan, dan kemampuan premi calon nasabah untuk merancang proposal ilustrasi asuransi (konvensional/syariah) yang sesuai kebutuhan.</li>
           <li>Membimbing calon nasabah dalam penyiapan dokumen SPAJ, menjelaskan hak-kewajiban secara transparan, serta mengawal proses pengajuan proposal.</li>
           <li>Berkoordinasi aktif dengan tim internal serta rutin mengikuti pelatihan, seminar, dan ujian sertifikasi produk baru guna menjaga pemahaman materi tetap aktual.</li>
-          <li>Menjaga kepatuhan terhadap kode etik keagenan berdasarkan lisensi AAJI-AASI, serta memastikan seluruh proses layanan sejalan dengan regulasi OJK.</li>
+          <li>Menjaga kepatuhan terhadap kode etik keagenan berdasarkan lisensi AAJI–AASI, serta memastikan seluruh proses layanan sejalan dengan regulasi OJK.</li>
           <li>Memantau perkembangan tren produk asuransi serta dinamika pasar ekonomi untuk memberikan edukasi literasi keuangan yang tepat kepada masyarakat.</li>
         </ol>
       
@@ -242,7 +242,7 @@ const data = {
           <li>Analyzed prospective clients' risk profiles, financial goals, and premium capabilities to design tailored insurance illustration proposals (conventional/sharia).</li>
           <li>Guided prospective clients in preparing SPAJ documents, explaining rights and obligations transparently, and overseeing the proposal submission process.</li>
           <li>Coordinated actively with the internal team and regularly attended training, seminars, and new product certification exams to keep knowledge up-to-date.</li>
-          <li>Maintained compliance with the agency code of ethics based on AAJI-AASI licenses, ensuring all service processes aligned with OJK regulations.</li>
+          <li>Maintained compliance with the agency code of ethics based on AAJI–AASI licenses, ensuring all service processes aligned with OJK regulations.</li>
           <li>Monitored trends in insurance products and economic market dynamics to provide appropriate financial literacy education to the public.</li>
         </ol>
       
@@ -293,7 +293,7 @@ const data = {
           <li>Mematuhi standar operasional dengan menggunakan atribut resmi serta merawat kondisi kendaraan secara rutin guna meminimalisir kendala teknis di jalan.</li>
         </ol>
       
-        <p className="mt-4 text-[0.8125rem] sm:text-[0.84375rem] text-blue-600 dark:text-blue-400 font-medium font-calibri">#Transportasi #JasaLayanan #Kurir-Ojek #Pesan-Antar #Aplikasi</p>
+        <p className="mt-4 text-[0.8125rem] sm:text-[0.84375rem] text-blue-600 dark:text-blue-400 font-medium font-calibri">#Transportasi #JasaLayanan #Kurir–Ojek #Pesan–Antar #Aplikasi</p>
       </>
     ),
       detailsEn: (
@@ -308,7 +308,7 @@ const data = {
           <li>Complied with operational standards by using official attributes and maintaining vehicle conditions regularly to minimize technical obstacles on the road.</li>
         </ol>
       
-        <p className="mt-4 text-[0.8125rem] sm:text-[0.84375rem] text-blue-600 dark:text-blue-400 font-medium font-calibri">#Transportasi #JasaLayanan #Kurir-Ojek #Pesan-Antar #Aplikasi</p>
+        <p className="mt-4 text-[0.8125rem] sm:text-[0.84375rem] text-blue-600 dark:text-blue-400 font-medium font-calibri">#Transportasi #JasaLayanan #Kurir–Ojek #Pesan–Antar #Aplikasi</p>
       </>
     ) },
     { year: "", company: "Shopee Internasional Indonesia", role: <><span>Shopee</span></>, rightTitle: "Online Driver", location: "", href: "#", isPresent: false, logoBg: "bg-orange-500", logoColor: "text-[#F2F0EF]", initials: "S", 
@@ -324,7 +324,7 @@ const data = {
           <li>Mematuhi standar operasional dengan menggunakan atribut resmi serta merawat kondisi kendaraan secara rutin guna meminimalisir kendala teknis di jalan.</li>
         </ol>
       
-        <p className="mt-4 text-[0.8125rem] sm:text-[0.84375rem] text-blue-600 dark:text-blue-400 font-medium font-calibri">#Transportasi #JasaLayanan #Kurir-Ojek #Pesan-Antar #Aplikasi</p>
+        <p className="mt-4 text-[0.8125rem] sm:text-[0.84375rem] text-blue-600 dark:text-blue-400 font-medium font-calibri">#Transportasi #JasaLayanan #Kurir–Ojek #Pesan–Antar #Aplikasi</p>
       </>
     ),
       detailsEn: (
@@ -339,7 +339,7 @@ const data = {
           <li>Complied with operational standards by using official attributes and maintaining vehicle conditions regularly to minimize technical obstacles on the road.</li>
         </ol>
       
-        <p className="mt-4 text-[0.8125rem] sm:text-[0.84375rem] text-blue-600 dark:text-blue-400 font-medium font-calibri">#Transportasi #JasaLayanan #Kurir-Ojek #Pesan-Antar #Aplikasi</p>
+        <p className="mt-4 text-[0.8125rem] sm:text-[0.84375rem] text-blue-600 dark:text-blue-400 font-medium font-calibri">#Transportasi #JasaLayanan #Kurir–Ojek #Pesan–Antar #Aplikasi</p>
       </>
     ) },
     { year: "", company: "Teknologi Perdana Indonesia", role: <><span>Maxim</span></>, rightTitle: "Online Driver", location: "", href: "#", isPresent: false, logoBg: "bg-yellow-500", logoColor: "text-[#F2F0EF]", initials: "M", 
@@ -355,7 +355,7 @@ const data = {
           <li>Mematuhi standar operasional dengan menggunakan atribut resmi serta merawat kondisi kendaraan secara rutin guna meminimalisir kendala teknis di jalan.</li>
         </ol>
       
-        <p className="mt-4 text-[0.8125rem] sm:text-[0.84375rem] text-blue-600 dark:text-blue-400 font-medium font-calibri">#Transportasi #JasaLayanan #Kurir-Ojek #Pesan-Antar #Aplikasi</p>
+        <p className="mt-4 text-[0.8125rem] sm:text-[0.84375rem] text-blue-600 dark:text-blue-400 font-medium font-calibri">#Transportasi #JasaLayanan #Kurir–Ojek #Pesan–Antar #Aplikasi</p>
       </>
     ),
       detailsEn: (
@@ -370,56 +370,70 @@ const data = {
           <li>Complied with operational standards by using official attributes and maintaining vehicle conditions regularly to minimize technical obstacles on the road.</li>
         </ol>
       
-        <p className="mt-4 text-[0.8125rem] sm:text-[0.84375rem] text-blue-600 dark:text-blue-400 font-medium font-calibri">#Transportasi #JasaLayanan #Kurir-Ojek #Pesan-Antar #Aplikasi</p>
+        <p className="mt-4 text-[0.8125rem] sm:text-[0.84375rem] text-blue-600 dark:text-blue-400 font-medium font-calibri">#Transportasi #JasaLayanan #Kurir–Ojek #Pesan–Antar #Aplikasi</p>
       </>
     ) }
   ],
   organizations: [
-    { year: "", role: "Radio dan Pers Kampus", roleEn: "Campus Radio & Press", company: "ULBI", location: "Bandung", href: "#" },
-    { year: "", role: "Himpunan Mahasiswa Pencinta Unggas", roleEn: "Poultry Lovers Student Association", company: "USK", location: "Banda Aceh", href: "#" },
-    { year: "", role: "Mading dan Pers", roleEn: "Wall Magazine & Press", company: "SMA 8 Pontianak", location: "Pontianak", href: "#" }
+    { year: "", role: "Radio dan Pers Kampus", roleEn: "Campus Radio & Press", company: "Universitas Logistik dan Bisnis Internasional (ULBI)", location: "Bandung, Indonesia", href: "#" },
+    { year: "", role: "Himpunan Mahasiswa Pencinta Unggas", roleEn: "Poultry Lovers Student Association", company: "Universitas Syiah Kuala (USK)", location: "Banda Aceh, Indonesia", href: "#" },
+    { year: "", role: "Mading dan Pers", roleEn: "Wall Magazine & Press", company: "SMA Negeri 8 Pontianak", location: "Pontianak, Indonesia", href: "#" }
   ],
   certificate: [
     { 
       year: "2024", 
-      title: "Six Sigma (64/80) White Belt", 
-      subtitle: "The Council for Six Sigma Certification (CSSC)", 
-      location: "Online", 
-      locationId: "Daring",
+      title: "Six Sigma (64/80) – White Belt (CSSWB)", 
+      subtitle: (
+        <>
+          <span>The Council for Six Sigma Certification (CSSC)</span>
+        </>
+      ), 
+      location: "United States", 
       href: "https://drive.google.com/file/d/1B_SkKayCigdyRwtSluJiheSUpkyn0E3b/view?usp=sharing" 
     },
     { 
       year: "2024", 
-      title: "Lean Six Sigma (68/80) White Belt", 
-      subtitle: "The Council for Six Sigma Certification (CSSC)", 
-      location: "Online", 
-      locationId: "Daring",
+      title: "Lean Six Sigma (68/80) – White Belt (CSSWB)", 
+      subtitle: (
+        <>
+          <span>The Council for Six Sigma Certification (CSSC)</span>
+        </>
+      ), 
+      location: "United States", 
       href: "https://drive.google.com/file/d/1Sx60x5R7G0eTpk6tOOIi1OYLlozMuZpi/view?usp=drive_link" 
     },
     { 
       year: "2024", 
-      title: "SAP01 SAP Overview", 
-      subtitle: "Edugate Indonesia • ERP & Digital Business System", 
-      location: "Online", 
-      locationId: "Daring",
+      title: "SAP01 – SAP Overview", 
+      subtitle: (
+        <>
+          <span>Edugate Indonesia</span>
+        </>
+      ), 
+      location: "Indonesia", 
       href: "https://drive.google.com/file/d/1Ypt10VSW6fdkUm3HKLJBodaQpTSl1OcJ/view?usp=sharing" 
     },
     { 
       year: "2023", 
-      title: "CEFR B1 Intermediate (302)", 
-      subtitle: "British Council • English Proficiency Assessment", 
-      location: "Online", 
-      locationId: "Daring",
+      title: "CEFR B1 – Intermediate (302)", 
+      subtitle: (
+        <>
+          <span>British Council</span>
+        </>
+      ), 
+      location: "United Kingdom", 
       href: "#" 
     },
     { 
       year: "2025", 
       title: "Dasar Procurement & Purchasing di Perusahaan", 
       titleEn: "Fundamentals of Corporate Procurement & Purchasing",
-      subtitle: "Ioda Academy • Recorded Workshop Praktikal Berprojek", 
-      subtitleEn: "Ioda Academy • Practical Project-Based Recorded Workshop",
-      location: "Online", 
-      locationId: "Daring",
+      subtitle: (
+        <>
+          <span>Ioda Academy</span>
+        </>
+      ), 
+      location: "Indonesia", 
       href: "https://drive.google.com/file/d/1hEQUPywU-ce3x1P-zyiUre65oYf4bZhV/view?usp=drive_link" 
     }
   ],
@@ -462,18 +476,100 @@ const data = {
     }
   ],
   formalSchool: [
-    { year: "", title: "SMA Negeri 8 Pontianak", subtitle: "MIPA (NPSN: 30105204 | Akreditasi A)", subtitleEn: "Natural Sciences (NPSN: 30105204 | Accreditation A)", location: "Pontianak", href: "https://sekolah.data.kemendikdasmen.go.id/profil-sekolah/04531D4B-7A11-4B2D-B063-6664362CE129" },
-    { year: "", title: "SMP Negeri 1 Batang Lupar", subtitle: "NPSN: 30102940 | Akreditasi B", subtitleEn: "NPSN: 30102940 | Accreditation B", location: "Kapuas Hulu", href: "https://sekolah.data.kemendikdasmen.go.id/profil-sekolah/F09BB109-30F5-E011-90C6-F9C4ACF3E380" },
-    { year: "", title: "SD Negeri 01 Lanjak", subtitle: "NPSN: 30103040 | Akreditasi A", subtitleEn: "NPSN: 30103040 | Accreditation A", location: "Kapuas Hulu", href: "https://sekolah.data.kemendikdasmen.go.id/profil-sekolah/903B0F09-30F5-E011-9EB4-8B25DB501A9D" }
+    { 
+      year: "2020", 
+      leftInfo: (
+        <>
+          <span>NPSN: 30105204</span>
+          <span>Akreditasi: A</span>
+        </>
+      ),
+      leftInfoEn: (
+        <>
+          <span>NPSN: 30105204</span>
+          <span>Accreditation: A</span>
+        </>
+      ),
+      title: "SMA Negeri 8 Pontianak", 
+      subtitle: (
+        <>
+          <span>MIPA</span>
+        </>
+      ), 
+      subtitleEn: (
+        <>
+          <span>Mathematics and Natural Sciences</span>
+        </>
+      ), 
+      location: "Pontianak", 
+      href: "https://sekolah.data.kemendikdasmen.go.id/profil-sekolah/04531D4B-7A11-4B2D-B063-6664362CE129" 
+    },
+    { 
+      year: "2017", 
+      leftInfo: (
+        <>
+          <span>NPSN: 30102940</span>
+          <span>Akreditasi: B</span>
+        </>
+      ),
+      leftInfoEn: (
+        <>
+          <span>NPSN: 30102940</span>
+          <span>Accreditation: B</span>
+        </>
+      ),
+      title: "SMP Negeri 1 Batang Lupar", 
+      location: "Kab. Kapuas Hulu", 
+      href: "https://sekolah.data.kemendikdasmen.go.id/profil-sekolah/F09BB109-30F5-E011-90C6-F9C4ACF3E380" 
+    },
+    { 
+      year: "2014", 
+      leftInfo: (
+        <>
+          <span>NPSN: 30103040</span>
+          <span>Akreditasi: A</span>
+        </>
+      ),
+      leftInfoEn: (
+        <>
+          <span>NPSN: 30103040</span>
+          <span>Accreditation: A</span>
+        </>
+      ),
+      title: "SD Negeri 01 Lanjak", 
+      location: "Kab. Kapuas Hulu", 
+      href: "https://sekolah.data.kemendikdasmen.go.id/profil-sekolah/903B0F09-30F5-E011-9EB4-8B25DB501A9D" 
+    }
   ],
   tertiaryDegree: [
-    { year: "2021 – 2025", title: "Sarjana Terapan Logistik (S.Tr.Log.)", titleEn: "Applied Bachelor of Logistics (S.Tr.Log.)", subtitle: "Universitas Logistik dan Bisnis Internasional (ULBI) • PDDikti: 041104 (Akreditasi B / Baik Sekali)", subtitleEn: "International Logistics and Business University (ULBI) • PDDikti: 041104 (Accreditation B / Very Good)", location: "Bandung", href: "https://pddikti.kemdiktisaintek.go.id/detail-prodi/ODloXNDeYp9ggYjIE1_rHnAoLqKGWJDhO3uFfP-zRjprQ4PjJGEX5QcL9E1w28bgTBt3vQ==" }
+    { 
+      year: "2021 – 2025", 
+      title: "Sarjana Terapan Logistik (S.Tr.Log.)", 
+      titleEn: "Applied Bachelor of Logistics (S.Tr.Log.)", 
+      subtitle: (
+        <>
+          <span>Universitas Logistik dan Bisnis Internasional (ULBI)</span>
+          <span className="mt-[7pt]">PDDikti: 041104</span>
+          <span>Akreditasi: B (Baik Sekali)</span>
+        </>
+      ), 
+      subtitleEn: (
+        <>
+          <span>International Logistics and Business University (ULBI)</span>
+          <span className="mt-[7pt]">PDDikti: 041104</span>
+          <span>Accreditation: B (Very Good)</span>
+        </>
+      ), 
+      location: "Bandung", 
+      href: "https://pddikti.kemdiktisaintek.go.id/detail-prodi/ODloXNDeYp9ggYjIE1_rHnAoLqKGWJDhO3uFfP-zRjprQ4PjJGEX5QcL9E1w28bgTBt3vQ==" 
+    }
   ],
-  workshop: [] as Array<{ year: string, title: string, titleEn?: string, subtitle?: string, subtitleEn?: string, location?: string, href?: string }>
+  workshop: [] as Array<{ year: string, title: string, titleEn?: string, subtitle?: string, subtitleEn?: string, location?: string, href?: string }>,
+  research: [] as Array<{ year: string, title: string, titleEn?: string, subtitle?: React.ReactNode, subtitleEn?: React.ReactNode, location?: string, href?: string }>
 };
 
-const Section = ({ children, noGap = false, gapClassName }: { children: React.ReactNode, noGap?: boolean, gapClassName?: string }) => (
-  <section className="mb-8">
+const Section = ({ children, noGap = false, gapClassName, className = "mb-8" }: { children: React.ReactNode, noGap?: boolean, gapClassName?: string, className?: string }) => (
+  <section className={className}>
     <div className={`flex flex-col ${noGap ? '' : (gapClassName || 'gap-6')}`}>
       {children}
     </div>
@@ -534,15 +630,68 @@ const WorkExperienceItem = ({ year, role, roleEn, company, location, locationId,
   );
 };
 
-const IndonesiaFlag = ({ className = "w-5 h-3.5 sm:w-6 sm:h-4" }: { className?: string }) => (
+const FLAG_SIZE_CLASS = "w-[1.3125rem] h-[0.91875rem] sm:w-[1.575rem] sm:h-[1.05rem]";
+
+const IndonesiaFlag = ({ className = FLAG_SIZE_CLASS }: { className?: string }) => (
   <span title="Indonesia" className="inline-flex items-center justify-center">
     <svg 
       viewBox="0 0 900 600" 
-      className={`rounded-[2px] shadow-xs border border-black/15 dark:border-white/20 overflow-hidden shrink-0 ${className}`}
+      className={`overflow-hidden shrink-0 ${className}`}
       aria-label="Indonesia"
     >
       <rect width="900" height="300" fill="#E70011" />
       <rect y="300" width="900" height="300" fill="#FFFFFF" />
+    </svg>
+  </span>
+);
+
+const USFlag = ({ className = FLAG_SIZE_CLASS }: { className?: string }) => (
+  <span title="United States" className="inline-flex items-center justify-center">
+    <svg
+      viewBox="0 0 900 600"
+      className={`overflow-hidden shrink-0 ${className}`}
+      aria-label="United States"
+    >
+      <rect width="900" height="600" fill="#B22234" />
+      <path
+        d="M0,69.23H900M0,161.54H900M0,253.85H900M0,346.15H900M0,438.46H900M0,530.77H900"
+        stroke="#FFFFFF"
+        strokeWidth="46.15"
+      />
+      <rect width="360" height="323.08" fill="#3C3B6E" />
+      <g fill="#FFFFFF">
+        {[0, 1, 2, 3, 4].map((row) =>
+          [0, 1, 2, 3, 4, 5].map((col) => (
+            <circle key={`a-${row}-${col}`} cx={30 + col * 60} cy={32.3 + row * 64.6} r="10" />
+          ))
+        )}
+        {[0, 1, 2, 3].map((row) =>
+          [0, 1, 2, 3, 4].map((col) => (
+            <circle key={`b-${row}-${col}`} cx={60 + col * 60} cy={64.6 + row * 64.6} r="10" />
+          ))
+        )}
+      </g>
+    </svg>
+  </span>
+);
+
+const UKFlag = ({ className = FLAG_SIZE_CLASS }: { className?: string }) => (
+  <span title="United Kingdom" className="inline-flex items-center justify-center">
+    <svg
+      viewBox="0 0 60 40"
+      className={`overflow-hidden shrink-0 ${className}`}
+      aria-label="United Kingdom"
+    >
+      <clipPath id="uk-clip">
+        <rect width="60" height="40" />
+      </clipPath>
+      <g clipPath="url(#uk-clip)">
+        <rect width="60" height="40" fill="#012169" />
+        <path d="M0,0 L60,40 M60,0 L0,40" stroke="#FFFFFF" strokeWidth="8" />
+        <path d="M0,0 L60,40 M60,0 L0,40" stroke="#C8102E" strokeWidth="4.8" />
+        <path d="M30,0 V40 M0,20 H60" stroke="#FFFFFF" strokeWidth="13.3" />
+        <path d="M30,0 V40 M0,20 H60" stroke="#C8102E" strokeWidth="8" />
+      </g>
     </svg>
   </span>
 );
@@ -553,19 +702,97 @@ const ListItem: React.FC<{
   titleEn?: React.ReactNode,
   subtitle?: React.ReactNode, 
   subtitleEn?: React.ReactNode, 
+  leftInfo?: React.ReactNode,
+  leftInfoEn?: React.ReactNode,
+  centerContent?: boolean,
+  yearBelowLocation?: boolean,
   location?: React.ReactNode, 
   locationId?: React.ReactNode,
   href?: string,
   lang?: 'en' | 'id',
   hideArrow?: boolean,
   paddingY?: string
-}> = ({ year, title, titleEn, subtitle, subtitleEn, location, locationId, href, lang = 'id', hideArrow = false, paddingY }) => {
+}> = ({ year, title, titleEn, subtitle, subtitleEn, leftInfo, leftInfoEn, centerContent = false, yearBelowLocation = false, location, locationId, href, lang = 'id', hideArrow = false, paddingY }) => {
   const displayTitle = (lang === 'en' && titleEn) ? titleEn : title;
   const displaySubtitle = (lang === 'en' && subtitleEn) ? subtitleEn : subtitle;
+  const displayLeftInfo = (lang === 'en' && leftInfoEn) ? leftInfoEn : leftInfo;
   const rawLocation = (lang === 'id' && locationId) ? locationId : location;
-  const displayLocation = rawLocation === "Indonesia" ? <IndonesiaFlag /> : rawLocation;
+  const displayLocation =
+    rawLocation === "Indonesia" ? <IndonesiaFlag /> :
+    rawLocation === "United States" ? <USFlag /> :
+    rawLocation === "United Kingdom" ? <UKFlag /> :
+    rawLocation;
 
-  const content = (
+  const content = centerContent ? (
+    <div className={`grid grid-cols-[minmax(0,1fr)_auto_minmax(0,1fr)] gap-2 sm:gap-2.5 items-center group ${paddingY || 'p-2.5 sm:p-4'} px-2.5 sm:px-4 rounded-lg sm:rounded-xl hover:bg-[#EAE8E6] dark:hover:bg-[#737171] transition-colors w-full`}>
+      <div className="flex flex-col items-start justify-center min-w-0 text-left gap-0.5">
+        {displayLeftInfo && (
+          <span className="text-[0.68rem] sm:text-[0.875rem] text-[#3D3D3D]/80 dark:text-[#F2F0EF]/80 leading-[1.5] sm:leading-[1.6] flex flex-col gap-0.5">
+            {displayLeftInfo}
+          </span>
+        )}
+      </div>
+
+      <div className="flex flex-col items-center justify-center text-center min-w-0 max-w-[9.75rem] sm:max-w-[14.5rem]">
+        <span className="text-[0.78rem] sm:text-[0.875rem] font-medium text-[#3D3D3D] dark:text-[#F2F0EF] leading-[1.5] sm:leading-[1.6]">{displayTitle}</span>
+        {displaySubtitle && (
+          <span className="text-[0.7rem] sm:text-[0.875rem] text-[#3D3D3D]/80 dark:text-[#F2F0EF]/80 leading-[1.5] sm:leading-[1.6] mt-0.5 flex flex-col items-center gap-0.5">
+            {displaySubtitle}
+          </span>
+        )}
+      </div>
+
+      <div className="flex items-center justify-end min-w-0 text-right whitespace-nowrap">
+        <div className="flex flex-col items-end justify-center gap-0.5">
+          {displayLocation && (
+            <span className="text-[0.68rem] sm:text-[0.875rem] text-[#3D3D3D]/80 dark:text-[#F2F0EF] leading-[1.5] sm:leading-[1.6]">
+              {displayLocation}
+            </span>
+          )}
+          {year && (
+            <span className="text-[0.68rem] sm:text-[0.875rem] text-[#3D3D3D]/80 dark:text-[#F2F0EF]/80 leading-[1.5] sm:leading-[1.6]">
+              {year}
+            </span>
+          )}
+        </div>
+        {href && href !== '#' && !hideArrow && (
+          <span className="ml-2 shrink-0 opacity-0 group-hover:opacity-100 transition-opacity hidden sm:inline-flex">
+            <ArrowUpRight className="w-4 h-4 text-[#3D3D3D]/40 dark:text-[#F2F0EF]/40" />
+          </span>
+        )}
+      </div>
+    </div>
+  ) : yearBelowLocation ? (
+    <div className={`flex flex-row justify-between gap-2 sm:gap-4 items-center group ${paddingY || 'p-2.5 sm:p-4'} px-2.5 sm:px-4 rounded-lg sm:rounded-xl hover:bg-[#EAE8E6] dark:hover:bg-[#737171] transition-colors w-full`}>
+      <div className="flex flex-col items-start justify-center pr-1 sm:pr-4 flex-1 min-w-0">
+        <span className="text-[0.78rem] sm:text-[0.875rem] font-medium text-[#3D3D3D] dark:text-[#F2F0EF] leading-[1.5] sm:leading-[1.6]">{displayTitle}</span>
+        {displaySubtitle && (
+          <span className="text-[0.7rem] sm:text-[0.875rem] text-[#3D3D3D]/80 dark:text-[#F2F0EF]/80 leading-[1.5] sm:leading-[1.6] mt-0.5 flex flex-col gap-0.5">
+            {displaySubtitle}
+          </span>
+        )}
+      </div>
+      <div className="flex items-center justify-end shrink-0 whitespace-nowrap text-right">
+        <div className="flex flex-col items-end justify-center gap-0.5">
+          {displayLocation && (
+            <span className="text-[0.68rem] sm:text-[0.875rem] text-[#3D3D3D]/80 dark:text-[#F2F0EF] leading-[1.5] sm:leading-[1.6]">
+              {displayLocation}
+            </span>
+          )}
+          {year && (
+            <span className="text-[0.68rem] sm:text-[0.875rem] text-[#3D3D3D]/80 dark:text-[#F2F0EF]/80 leading-[1.5] sm:leading-[1.6]">
+              {year}
+            </span>
+          )}
+        </div>
+        {href && href !== '#' && !hideArrow && (
+          <span className="ml-2 shrink-0 opacity-0 group-hover:opacity-100 transition-opacity hidden sm:inline-flex">
+            <ArrowUpRight className="w-4 h-4 text-[#3D3D3D]/40 dark:text-[#F2F0EF]/40" />
+          </span>
+        )}
+      </div>
+    </div>
+  ) : (
     <div className={`flex flex-col sm:flex-row gap-1 sm:gap-4 items-start sm:items-center group ${paddingY || 'p-2.5 sm:p-4'} px-2.5 sm:px-4 rounded-lg sm:rounded-xl hover:bg-[#EAE8E6] dark:hover:bg-[#737171] transition-colors`}>
       <div className="flex-1 flex flex-col sm:flex-row justify-between gap-1 sm:gap-4 w-full items-start sm:items-center min-w-0">
         <div className="flex flex-col items-start pr-1 sm:pr-4 flex-1 min-w-0">
@@ -726,7 +953,7 @@ export default function ResumeApp({
 
   const paginate = (newDirection: number) => {
     const nextPage = page + newDirection;
-    if (nextPage >= 0 && nextPage <= 9) {
+    if (nextPage >= 0 && nextPage <= 14) {
       setPage([nextPage, newDirection]);
     }
   };
@@ -739,13 +966,16 @@ export default function ResumeApp({
       contract: "Contract",
       remote: "Remote",
       freelance: "Freelance",
+      contribution: "Contribution",
       organizational: "Organizational",
+      research: "Research",
       education: "Education",
       formalSchool: "Formal School",
       tertiaryDegree: "Tertiary Degree",
       workshop: "Workshop",
-      certificate: "Certificate",
-      license: "License",
+      competency: "Competency",
+      certificate: "Certificates",
+      license: "Licenses",
       present: "Present",
       address: "Address"
     },
@@ -756,11 +986,14 @@ export default function ResumeApp({
       contract: "Kontrak",
       remote: "Jarak Jauh",
       freelance: "Pekerja Lepas",
+      contribution: "Kontribusi",
       organizational: "Organisasi",
+      research: "Penelitian",
       education: "Pendidikan",
       formalSchool: "Sekolah Formal",
       tertiaryDegree: "Pendidikan Tinggi",
       workshop: "Lokakarya",
+      competency: "Kompetensi",
       certificate: "Sertifikat",
       license: "Lisensi",
       present: "Sekarang",
@@ -811,23 +1044,44 @@ export default function ResumeApp({
                 <h1 className="text-xl sm:text-2xl lg:text-3xl font-semibold mb-1 sm:mb-2 text-[#3D3D3D] dark:text-[#F2F0EF] leading-tight">{data.sidebar.name}</h1>
                 <p className="text-sm sm:text-base lg:text-[1.125rem] text-[#3D3D3D] dark:text-[#F2F0EF] font-medium mb-4 sm:mb-8 leading-tight">{data.sidebar.role}</p>
                 
+                {/* Contact */}
+                <div className="flex flex-col gap-2.5 sm:gap-4 lg:gap-6">
+                  {data.sidebar.contact.map((item, idx) => (
+                    <div key={idx} className="flex items-center gap-2 sm:gap-3 lg:gap-4 min-w-0">
+                      <div className="w-7 h-7 sm:w-8 sm:h-8 lg:w-10 lg:h-10 rounded-full bg-[#3D3D3D] dark:bg-[#F2F0EF] flex items-center justify-center text-[#F2F0EF] dark:text-[#3D3D3D] shrink-0">
+                        <item.icon className="w-3.5 h-3.5 sm:w-4 sm:h-4 lg:w-[1.125rem] lg:h-[1.125rem]" strokeWidth={2} />
+                      </div>
+                      <div className="flex flex-col min-w-0 overflow-hidden">
+                        <span className="text-[0.65rem] sm:text-[0.7rem] lg:text-[0.75rem] text-[#3D3D3D]/80 dark:text-[#F2F0EF] leading-tight truncate">{item.label === "Address" ? t.address : item.label}</span>
+                        {item.label === "Website" ? (
+                          <a 
+                            href={item.value.startsWith('http') ? item.value : `https://${item.value}`} 
+                            target="_blank" 
+                            rel="noopener noreferrer" 
+                            className="text-[0.72rem] sm:text-[0.75rem] lg:text-[0.875rem] font-medium text-[#3D3D3D] dark:text-[#F2F0EF] hover:underline truncate"
+                          >
+                            {item.value}
+                          </a>
+                        ) : (
+                          <span className="text-[0.72rem] sm:text-[0.75rem] lg:text-[0.875rem] font-medium text-[#3D3D3D] dark:text-[#F2F0EF] truncate">{item.value}</span>
+                        )}
+                      </div>
+                    </div>
+                  ))}
+                </div>
                 
                 {/* Navigation Menu */}
-                <div className="flex flex-col gap-1 sm:gap-1.5 mt-3 sm:mt-8">
-                  {/* Experience Group (Parent Category with 5 Children) */}
+                <div className="flex flex-col gap-1 sm:gap-1.5 mt-4 sm:mt-8">
+                  {/* Experience Group (Parent Category with 4 Children) */}
                   <div className="flex flex-col">
                     <button 
-                      onClick={() => {
-                        if (page > 4 || page < 0) {
-                          setPage([0, -1]);
-                        }
-                      }}
-                      className="text-left px-3 sm:px-4 pt-1 sm:pt-1.5 pb-0.5 sm:pb-1 text-[10.5pt] sm:text-[11pt] lg:text-[12.5pt] font-semibold text-[#3D3D3D] dark:text-[#F2F0EF] italic tracking-tight hover:opacity-80 transition-opacity"
+                      onClick={() => setPage([10, 10 > page ? 1 : -1])}
+                      className={`text-left px-3 sm:px-4 py-1 sm:py-1.5 rounded-lg sm:rounded-xl text-[10.5pt] sm:text-[11pt] lg:text-[12.5pt] font-semibold italic tracking-tight transition-colors cursor-pointer ${page === 10 ? 'bg-black text-white dark:bg-white dark:text-black shadow-sm' : 'bg-transparent text-[#3D3D3D] dark:text-[#F2F0EF] hover:bg-[#E6E4E3] dark:hover:bg-[#8C8B8B]'}`}
                     >
                       {t.experience}
                     </button>
                     
-                    {/* Sub-categories / Anak Kategori (5 items) */}
+                    {/* Sub-categories / Anak Kategori (4 items) */}
                     <div className="flex flex-col gap-0.5 sm:gap-1 pl-2 sm:pl-3 ml-2 sm:ml-3 border-l-2 border-[#3D3D3D]/20 dark:border-[#F2F0EF]/25 my-1">
                       <button 
                         onClick={() => setPage([0, 0 > page ? 1 : -1])} 
@@ -853,36 +1107,20 @@ export default function ResumeApp({
                       >
                         {t.freelance}
                       </button>
-                      <button 
-                        onClick={() => setPage([4, 4 > page ? 1 : -1])} 
-                        className={`text-left px-2.5 sm:px-3 py-1 sm:py-2 rounded-lg sm:rounded-xl text-[9pt] sm:text-[9.5pt] lg:text-[10.5pt] font-medium transition-colors ${page === 4 ? 'bg-black text-white dark:bg-white dark:text-black italic font-semibold shadow-sm' : 'bg-transparent text-black/80 hover:bg-[#E6E4E3] dark:text-white/80 dark:hover:bg-[#8C8B8B] italic'}`}
-                      >
-                        {t.organizational}
-                      </button>
                     </div>
                   </div>
 
-                  {/* Education Group (Parent Category with 3 Children) */}
+                  {/* Education Group (Parent Category with 2 Children) */}
                   <div className="flex flex-col">
                     <button 
-                      onClick={() => {
-                        if (page < 5 || page > 7) {
-                          setPage([5, page < 5 ? 1 : -1]);
-                        }
-                      }}
-                      className="text-left px-3 sm:px-4 pt-1 sm:pt-1.5 pb-0.5 sm:pb-1 text-[10.5pt] sm:text-[11pt] lg:text-[12.5pt] font-semibold text-[#3D3D3D] dark:text-[#F2F0EF] italic tracking-tight hover:opacity-80 transition-opacity"
+                      onClick={() => setPage([11, 11 > page ? 1 : -1])}
+                      className={`text-left px-3 sm:px-4 py-1 sm:py-1.5 rounded-lg sm:rounded-xl text-[10.5pt] sm:text-[11pt] lg:text-[12.5pt] font-semibold italic tracking-tight transition-colors cursor-pointer ${page === 11 ? 'bg-black text-white dark:bg-white dark:text-black shadow-sm' : 'bg-transparent text-[#3D3D3D] dark:text-[#F2F0EF] hover:bg-[#E6E4E3] dark:hover:bg-[#8C8B8B]'}`}
                     >
                       {t.education}
                     </button>
                     
-                    {/* Sub-categories / Anak Kategori (3 items) */}
+                    {/* Sub-categories / Anak Kategori (2 items) */}
                     <div className="flex flex-col gap-0.5 sm:gap-1 pl-2 sm:pl-3 ml-2 sm:ml-3 border-l-2 border-[#3D3D3D]/20 dark:border-[#F2F0EF]/25 my-1">
-                      <button 
-                        onClick={() => setPage([5, 5 > page ? 1 : -1])} 
-                        className={`text-left px-2.5 sm:px-3 py-1 sm:py-2 rounded-lg sm:rounded-xl text-[9pt] sm:text-[9.5pt] lg:text-[10.5pt] font-medium transition-colors ${page === 5 ? 'bg-black text-white dark:bg-white dark:text-black italic font-semibold shadow-sm' : 'bg-transparent text-black/80 hover:bg-[#E6E4E3] dark:text-white/80 dark:hover:bg-[#8C8B8B] italic'}`}
-                      >
-                        {t.formalSchool}
-                      </button>
                       <button 
                         onClick={() => setPage([6, 6 > page ? 1 : -1])} 
                         className={`text-left px-2.5 sm:px-3 py-1 sm:py-2 rounded-lg sm:rounded-xl text-[9pt] sm:text-[9.5pt] lg:text-[10.5pt] font-medium transition-colors ${page === 6 ? 'bg-black text-white dark:bg-white dark:text-black italic font-semibold shadow-sm' : 'bg-transparent text-black/80 hover:bg-[#E6E4E3] dark:text-white/80 dark:hover:bg-[#8C8B8B] italic'}`}
@@ -890,54 +1128,73 @@ export default function ResumeApp({
                         {t.tertiaryDegree}
                       </button>
                       <button 
+                        onClick={() => setPage([5, 5 > page ? 1 : -1])} 
+                        className={`text-left px-2.5 sm:px-3 py-1 sm:py-2 rounded-lg sm:rounded-xl text-[9pt] sm:text-[9.5pt] lg:text-[10.5pt] font-medium transition-colors ${page === 5 ? 'bg-black text-white dark:bg-white dark:text-black italic font-semibold shadow-sm' : 'bg-transparent text-black/80 hover:bg-[#E6E4E3] dark:text-white/80 dark:hover:bg-[#8C8B8B] italic'}`}
+                      >
+                        {t.formalSchool}
+                      </button>
+                    </div>
+                  </div>
+
+                  {/* Competency Group (Parent Category with 3 Children) */}
+                  <div className="flex flex-col">
+                    <button 
+                      onClick={() => setPage([12, 12 > page ? 1 : -1])}
+                      className={`text-left px-3 sm:px-4 py-1 sm:py-1.5 rounded-lg sm:rounded-xl text-[10.5pt] sm:text-[11pt] lg:text-[12.5pt] font-semibold italic tracking-tight transition-colors cursor-pointer ${page === 12 ? 'bg-black text-white dark:bg-white dark:text-black shadow-sm' : 'bg-transparent text-[#3D3D3D] dark:text-[#F2F0EF] hover:bg-[#E6E4E3] dark:hover:bg-[#8C8B8B]'}`}
+                    >
+                      {t.competency}
+                    </button>
+                    
+                    {/* Sub-categories / Anak Kategori (3 items) */}
+                    <div className="flex flex-col gap-0.5 sm:gap-1 pl-2 sm:pl-3 ml-2 sm:ml-3 border-l-2 border-[#3D3D3D]/20 dark:border-[#F2F0EF]/25 my-1">
+                      <button 
                         onClick={() => setPage([7, 7 > page ? 1 : -1])} 
                         className={`text-left px-2.5 sm:px-3 py-1 sm:py-2 rounded-lg sm:rounded-xl text-[9pt] sm:text-[9.5pt] lg:text-[10.5pt] font-medium transition-colors ${page === 7 ? 'bg-black text-white dark:bg-white dark:text-black italic font-semibold shadow-sm' : 'bg-transparent text-black/80 hover:bg-[#E6E4E3] dark:text-white/80 dark:hover:bg-[#8C8B8B] italic'}`}
+                      >
+                        {t.certificate}
+                      </button>
+                      <button 
+                        onClick={() => setPage([8, 8 > page ? 1 : -1])} 
+                        className={`text-left px-2.5 sm:px-3 py-1 sm:py-2 rounded-lg sm:rounded-xl text-[9pt] sm:text-[9.5pt] lg:text-[10.5pt] font-medium transition-colors ${page === 8 ? 'bg-black text-white dark:bg-white dark:text-black italic font-semibold shadow-sm' : 'bg-transparent text-black/80 hover:bg-[#E6E4E3] dark:text-white/80 dark:hover:bg-[#8C8B8B] italic'}`}
+                      >
+                        {t.license}
+                      </button>
+                      <button 
+                        onClick={() => setPage([9, 9 > page ? 1 : -1])} 
+                        className={`text-left px-2.5 sm:px-3 py-1 sm:py-2 rounded-lg sm:rounded-xl text-[9pt] sm:text-[9.5pt] lg:text-[10.5pt] font-medium transition-colors ${page === 9 ? 'bg-black text-white dark:bg-white dark:text-black italic font-semibold shadow-sm' : 'bg-transparent text-black/80 hover:bg-[#E6E4E3] dark:text-white/80 dark:hover:bg-[#8C8B8B] italic'}`}
                       >
                         {t.workshop}
                       </button>
                     </div>
                   </div>
 
-                  {/* Main Categories */}
-                  <button onClick={() => setPage([8, 8 > page ? 1 : -1])} className={`text-left px-3 sm:px-4 py-2 sm:py-3 rounded-lg sm:rounded-xl text-[10.5pt] sm:text-[11pt] lg:text-[12.5pt] font-medium transition-colors ${page === 8 ? 'bg-black text-white dark:bg-white dark:text-black italic' : 'bg-transparent text-black hover:bg-[#E6E4E3] dark:text-white dark:hover:bg-[#8C8B8B] italic'}`}>
-                    {t.certificate}
-                  </button>
-                  <button onClick={() => setPage([9, 9 > page ? 1 : -1])} className={`text-left px-3 sm:px-4 py-2 sm:py-3 rounded-lg sm:rounded-xl text-[10.5pt] sm:text-[11pt] lg:text-[12.5pt] font-medium transition-colors ${page === 9 ? 'bg-black text-white dark:bg-white dark:text-black italic' : 'bg-transparent text-black hover:bg-[#E6E4E3] dark:text-white dark:hover:bg-[#8C8B8B] italic'}`}>
-                    {t.license}
-                  </button>
-                </div>
-              </div>
-
-              
-
-              {/* Contact */}
-              <div className="flex flex-col gap-2.5 sm:gap-4 lg:gap-6">
-                {data.sidebar.contact.map((item, idx) => (
-                  <div key={idx} className="flex items-center gap-2 sm:gap-3 lg:gap-4 min-w-0">
-                    <div className="w-7 h-7 sm:w-8 sm:h-8 lg:w-10 lg:h-10 rounded-full bg-[#3D3D3D] dark:bg-[#F2F0EF] flex items-center justify-center text-[#F2F0EF] dark:text-[#3D3D3D] shrink-0">
-                      <item.icon className="w-3.5 h-3.5 sm:w-4 sm:h-4 lg:w-[1.125rem] lg:h-[1.125rem]" strokeWidth={2} />
-                    </div>
-                    <div className="flex flex-col min-w-0 overflow-hidden">
-                      <span className="text-[0.65rem] sm:text-[0.7rem] lg:text-[0.75rem] text-[#3D3D3D]/80 dark:text-[#F2F0EF] leading-tight truncate">{item.label === "Address" ? t.address : item.label}</span>
-                      {item.label === "Website" ? (
-                        <a 
-                          href={item.value.startsWith('http') ? item.value : `https://${item.value}`} 
-                          target="_blank" 
-                          rel="noopener noreferrer" 
-                          className="text-[0.72rem] sm:text-[0.75rem] lg:text-[0.875rem] font-medium text-[#3D3D3D] dark:text-[#F2F0EF] hover:underline truncate"
-                        >
-                          {item.value}
-                        </a>
-                      ) : (
-                        <span className="text-[0.72rem] sm:text-[0.75rem] lg:text-[0.875rem] font-medium text-[#3D3D3D] dark:text-[#F2F0EF] truncate">{item.value}</span>
-                      )}
+                  {/* Contribution Group (Parent Category with 2 Children) */}
+                  <div className="flex flex-col">
+                    <button 
+                      onClick={() => setPage([13, 13 > page ? 1 : -1])}
+                      className={`text-left px-3 sm:px-4 py-1 sm:py-1.5 rounded-lg sm:rounded-xl text-[10.5pt] sm:text-[11pt] lg:text-[12.5pt] font-semibold italic tracking-tight transition-colors cursor-pointer ${page === 13 ? 'bg-black text-white dark:bg-white dark:text-black shadow-sm' : 'bg-transparent text-[#3D3D3D] dark:text-[#F2F0EF] hover:bg-[#E6E4E3] dark:hover:bg-[#8C8B8B]'}`}
+                    >
+                      {t.contribution}
+                    </button>
+                    
+                    {/* Sub-categories / Anak Kategori (2 items) */}
+                    <div className="flex flex-col gap-0.5 sm:gap-1 pl-2 sm:pl-3 ml-2 sm:ml-3 border-l-2 border-[#3D3D3D]/20 dark:border-[#F2F0EF]/25 my-1">
+                      <button 
+                        onClick={() => setPage([4, 4 > page ? 1 : -1])} 
+                        className={`text-left px-2.5 sm:px-3 py-1 sm:py-2 rounded-lg sm:rounded-xl text-[9pt] sm:text-[9.5pt] lg:text-[10.5pt] font-medium transition-colors ${page === 4 ? 'bg-black text-white dark:bg-white dark:text-black italic font-semibold shadow-sm' : 'bg-transparent text-black/80 hover:bg-[#E6E4E3] dark:text-white/80 dark:hover:bg-[#8C8B8B] italic'}`}
+                      >
+                        {t.organizational}
+                      </button>
+                      <button 
+                        onClick={() => setPage([14, 14 > page ? 1 : -1])} 
+                        className={`text-left px-2.5 sm:px-3 py-1 sm:py-2 rounded-lg sm:rounded-xl text-[9pt] sm:text-[9.5pt] lg:text-[10.5pt] font-medium transition-colors ${page === 14 ? 'bg-black text-white dark:bg-white dark:text-black italic font-semibold shadow-sm' : 'bg-transparent text-black/80 hover:bg-[#E6E4E3] dark:text-white/80 dark:hover:bg-[#8C8B8B] italic'}`}
+                      >
+                        {t.research}
+                      </button>
                     </div>
                   </div>
-                ))}
+                </div>
               </div>
-
-
-              
             </aside>
 
             {/* Main Content (Right Side of CV) */}
@@ -1025,9 +1282,12 @@ export default function ResumeApp({
                           <ListItem 
                             key={idx} 
                             year={item.year} 
+                            leftInfo={item.leftInfo}
+                            leftInfoEn={item.leftInfoEn}
+                            centerContent={true}
                             title={item.title} 
-                            subtitle={item.subtitle} 
-                            subtitleEn={item.subtitleEn}
+                            subtitle={(item as any).subtitle} 
+                            subtitleEn={(item as any).subtitleEn}
                             location={item.location} 
                             href={item.href} 
                             lang={lang}
@@ -1042,6 +1302,7 @@ export default function ResumeApp({
                           <ListItem 
                             key={idx} 
                             year={item.year} 
+                            yearBelowLocation={true}
                             title={item.title} 
                             titleEn={item.titleEn}
                             subtitle={item.subtitle} 
@@ -1055,25 +1316,7 @@ export default function ResumeApp({
                     )}
 
                     {page === 7 && (
-                      <Section>
-                        {data.workshop.map((item, idx) => (
-                          <ListItem 
-                            key={idx} 
-                            year={item.year} 
-                            title={item.title} 
-                            titleEn={item.titleEn}
-                            subtitle={item.subtitle} 
-                            subtitleEn={item.subtitleEn}
-                            location={item.location} 
-                            href={item.href} 
-                            lang={lang}
-                          />
-                        ))}
-                      </Section>
-                    )}
-
-                    {page === 8 && (
-                      <Section>
+                      <Section gapClassName="gap-[10pt]">
                         {data.certificate.map((item, idx) => (
                           <ListItem 
                             key={idx} 
@@ -1086,13 +1329,15 @@ export default function ResumeApp({
                             locationId={(item as any).locationId}
                             href={item.href} 
                             lang={lang}
+                            hideArrow={true}
+                            paddingY="py-[5pt]"
                           />
                         ))}
                       </Section>
                     )}
 
-                    {page === 9 && (
-                      <Section gapClassName="gap-[5pt]">
+                    {page === 8 && (
+                      <Section gapClassName="gap-[10pt]">
                         {data.license.map((item, idx) => (
                           <ListItem 
                             key={idx} 
@@ -1106,6 +1351,302 @@ export default function ResumeApp({
                             lang={lang}
                             hideArrow={true}
                             paddingY="py-[5pt]"
+                          />
+                        ))}
+                      </Section>
+                    )}
+
+                    {page === 9 && (
+                      <Section gapClassName="gap-[10pt]">
+                        {data.workshop.map((item, idx) => (
+                          <ListItem 
+                            key={idx} 
+                            year={item.year} 
+                            title={item.title} 
+                            titleEn={item.titleEn}
+                            subtitle={item.subtitle} 
+                            subtitleEn={item.subtitleEn}
+                            location={item.location} 
+                            href={item.href} 
+                            lang={lang}
+                            hideArrow={true}
+                            paddingY="py-[5pt]"
+                          />
+                        ))}
+                      </Section>
+                    )}
+
+                    {/* Combined Recap: Experience (All 5 Sub-categories) */}
+                    {page === 10 && (
+                      <div className="flex flex-col gap-[10pt] pb-6">
+                        <div>
+                          <div className="px-2.5 sm:px-4 mb-[10pt] flex items-center gap-[10pt]">
+                            <div className="h-px flex-1 bg-[#3D3D3D]/15 dark:bg-[#F2F0EF]/20" />
+                            <h3 className="text-[10pt] sm:text-[11pt] font-semibold italic text-[#3D3D3D] dark:text-[#F2F0EF] text-center shrink-0">{t.internship}</h3>
+                            <div className="h-px flex-1 bg-[#3D3D3D]/15 dark:bg-[#F2F0EF]/20" />
+                          </div>
+                          <Section noGap className="mb-0">
+                            {data.internships.map((item, idx) => {
+                              const key = `recap-intern-${idx}`;
+                              return (
+                                <WorkExperienceItem key={key} {...item} lang={lang} presentText={t.present} isExpanded={expandedWorkKey === key} onToggle={() => setExpandedWorkKey(expandedWorkKey === key ? null : key)} />
+                              );
+                            })}
+                          </Section>
+                        </div>
+
+                        <div>
+                          <div className="px-2.5 sm:px-4 mb-[10pt] flex items-center gap-[10pt]">
+                            <div className="h-px flex-1 bg-[#3D3D3D]/15 dark:bg-[#F2F0EF]/20" />
+                            <h3 className="text-[10pt] sm:text-[11pt] font-semibold italic text-[#3D3D3D] dark:text-[#F2F0EF] text-center shrink-0">{t.contract}</h3>
+                            <div className="h-px flex-1 bg-[#3D3D3D]/15 dark:bg-[#F2F0EF]/20" />
+                          </div>
+                          <Section noGap className="mb-0">
+                            {data.contractWork.map((item, idx) => {
+                              const key = `recap-contract-${idx}`;
+                              return (
+                                <WorkExperienceItem key={key} {...item} lang={lang} presentText={t.present} isExpanded={expandedWorkKey === key} onToggle={() => setExpandedWorkKey(expandedWorkKey === key ? null : key)} />
+                              );
+                            })}
+                          </Section>
+                        </div>
+
+                        <div>
+                          <div className="px-2.5 sm:px-4 mb-[10pt] flex items-center gap-[10pt]">
+                            <div className="h-px flex-1 bg-[#3D3D3D]/15 dark:bg-[#F2F0EF]/20" />
+                            <h3 className="text-[10pt] sm:text-[11pt] font-semibold italic text-[#3D3D3D] dark:text-[#F2F0EF] text-center shrink-0">{t.remote}</h3>
+                            <div className="h-px flex-1 bg-[#3D3D3D]/15 dark:bg-[#F2F0EF]/20" />
+                          </div>
+                          <Section noGap className="mb-0">
+                            {data.remoteWork.map((item, idx) => {
+                              const key = `recap-remote-${idx}`;
+                              return (
+                                <WorkExperienceItem key={key} {...item} lang={lang} presentText={t.present} isExpanded={expandedWorkKey === key} onToggle={() => setExpandedWorkKey(expandedWorkKey === key ? null : key)} />
+                              );
+                            })}
+                          </Section>
+                        </div>
+
+                        <div>
+                          <div className="px-2.5 sm:px-4 mb-[10pt] flex items-center gap-[10pt]">
+                            <div className="h-px flex-1 bg-[#3D3D3D]/15 dark:bg-[#F2F0EF]/20" />
+                            <h3 className="text-[10pt] sm:text-[11pt] font-semibold italic text-[#3D3D3D] dark:text-[#F2F0EF] text-center shrink-0">{t.freelance}</h3>
+                            <div className="h-px flex-1 bg-[#3D3D3D]/15 dark:bg-[#F2F0EF]/20" />
+                          </div>
+                          <Section noGap className="mb-0">
+                            {data.freelanceWork.map((item, idx) => {
+                              const key = `recap-freelance-${idx}`;
+                              return (
+                                <WorkExperienceItem key={key} {...item} lang={lang} presentText={t.present} isExpanded={expandedWorkKey === key} onToggle={() => setExpandedWorkKey(expandedWorkKey === key ? null : key)} />
+                              );
+                            })}
+                          </Section>
+                        </div>
+                      </div>
+                    )}
+
+                    {/* Combined Recap: Education (All 2 Sub-categories) */}
+                    {page === 11 && (
+                      <div className="flex flex-col gap-[10pt] pb-6">
+                        <div>
+                          <div className="px-2.5 sm:px-4 mb-[10pt] flex items-center gap-[10pt]">
+                            <div className="h-px flex-1 bg-[#3D3D3D]/15 dark:bg-[#F2F0EF]/20" />
+                            <h3 className="text-[10pt] sm:text-[11pt] font-semibold italic text-[#3D3D3D] dark:text-[#F2F0EF] text-center shrink-0">{t.tertiaryDegree}</h3>
+                            <div className="h-px flex-1 bg-[#3D3D3D]/15 dark:bg-[#F2F0EF]/20" />
+                          </div>
+                          <Section gapClassName="gap-[7pt]" className="mb-0">
+                            {data.tertiaryDegree.map((item, idx) => (
+                              <ListItem 
+                                key={idx} 
+                                year={item.year} 
+                                yearBelowLocation={true}
+                                title={item.title} 
+                                titleEn={item.titleEn}
+                                subtitle={item.subtitle} 
+                                subtitleEn={item.subtitleEn}
+                                location={item.location} 
+                                href={item.href} 
+                                lang={lang}
+                              />
+                            ))}
+                          </Section>
+                        </div>
+
+                        <div>
+                          <div className="px-2.5 sm:px-4 mb-[10pt] flex items-center gap-[10pt]">
+                            <div className="h-px flex-1 bg-[#3D3D3D]/15 dark:bg-[#F2F0EF]/20" />
+                            <h3 className="text-[10pt] sm:text-[11pt] font-semibold italic text-[#3D3D3D] dark:text-[#F2F0EF] text-center shrink-0">{t.formalSchool}</h3>
+                            <div className="h-px flex-1 bg-[#3D3D3D]/15 dark:bg-[#F2F0EF]/20" />
+                          </div>
+                          <Section gapClassName="gap-[7pt]" className="mb-0">
+                            {data.formalSchool.map((item, idx) => (
+                              <ListItem 
+                                key={idx} 
+                                year={item.year} 
+                                leftInfo={item.leftInfo}
+                                leftInfoEn={item.leftInfoEn}
+                                centerContent={true}
+                                title={item.title} 
+                                subtitle={(item as any).subtitle} 
+                                subtitleEn={(item as any).subtitleEn}
+                                location={item.location} 
+                                href={item.href} 
+                                lang={lang}
+                              />
+                            ))}
+                          </Section>
+                        </div>
+                      </div>
+                    )}
+
+                    {/* Combined Recap: Competency (All 3 Sub-categories) */}
+                    {page === 12 && (
+                      <div className="flex flex-col gap-[10pt] pb-6">
+                        <div>
+                          <div className="px-2.5 sm:px-4 mb-[10pt] flex items-center gap-[10pt]">
+                            <div className="h-px flex-1 bg-[#3D3D3D]/15 dark:bg-[#F2F0EF]/20" />
+                            <h3 className="text-[10pt] sm:text-[11pt] font-semibold italic text-[#3D3D3D] dark:text-[#F2F0EF] text-center shrink-0">{t.certificate}</h3>
+                            <div className="h-px flex-1 bg-[#3D3D3D]/15 dark:bg-[#F2F0EF]/20" />
+                          </div>
+                          <Section gapClassName="gap-[7pt]" className="mb-0">
+                            {data.certificate.map((item, idx) => (
+                              <ListItem 
+                                key={idx} 
+                                year={item.year} 
+                                title={item.title} 
+                                titleEn={(item as any).titleEn}
+                                subtitle={item.subtitle}
+                                subtitleEn={(item as any).subtitleEn}
+                                location={item.location}
+                                locationId={(item as any).locationId}
+                                href={item.href} 
+                                lang={lang}
+                                hideArrow={true}
+                                paddingY="py-[5pt]"
+                              />
+                            ))}
+                          </Section>
+                        </div>
+
+                        <div>
+                          <div className="px-2.5 sm:px-4 mb-[10pt] flex items-center gap-[10pt]">
+                            <div className="h-px flex-1 bg-[#3D3D3D]/15 dark:bg-[#F2F0EF]/20" />
+                            <h3 className="text-[10pt] sm:text-[11pt] font-semibold italic text-[#3D3D3D] dark:text-[#F2F0EF] text-center shrink-0">{t.license}</h3>
+                            <div className="h-px flex-1 bg-[#3D3D3D]/15 dark:bg-[#F2F0EF]/20" />
+                          </div>
+                          <Section gapClassName="gap-[7pt]" className="mb-0">
+                            {data.license.map((item, idx) => (
+                              <ListItem 
+                                key={idx} 
+                                year={item.year} 
+                                title={item.title} 
+                                titleEn={item.titleEn}
+                                subtitle={item.subtitle}
+                                subtitleEn={item.subtitleEn}
+                                location={item.location}
+                                href={(item as any).href} 
+                                lang={lang}
+                                hideArrow={true}
+                                paddingY="py-[5pt]"
+                              />
+                            ))}
+                          </Section>
+                        </div>
+
+                        {data.workshop.length > 0 && (
+                          <div>
+                            <div className="px-2.5 sm:px-4 mb-[10pt] flex items-center gap-[10pt]">
+                              <div className="h-px flex-1 bg-[#3D3D3D]/15 dark:bg-[#F2F0EF]/20" />
+                              <h3 className="text-[10pt] sm:text-[11pt] font-semibold italic text-[#3D3D3D] dark:text-[#F2F0EF] text-center shrink-0">{t.workshop}</h3>
+                              <div className="h-px flex-1 bg-[#3D3D3D]/15 dark:bg-[#F2F0EF]/20" />
+                            </div>
+                            <Section gapClassName="gap-[7pt]" className="mb-0">
+                              {data.workshop.map((item, idx) => (
+                                <ListItem 
+                                  key={idx} 
+                                  year={item.year} 
+                                  title={item.title} 
+                                  titleEn={item.titleEn}
+                                  subtitle={item.subtitle} 
+                                  subtitleEn={item.subtitleEn}
+                                  location={item.location} 
+                                  href={item.href} 
+                                  lang={lang}
+                                  hideArrow={true}
+                                  paddingY="py-[5pt]"
+                                />
+                              ))}
+                            </Section>
+                          </div>
+                        )}
+                      </div>
+                    )}
+
+                    {/* Combined Recap: Contribution (Sub-categories) */}
+                    {page === 13 && (
+                      <div className="flex flex-col gap-[10pt] pb-6">
+                        <div>
+                          <div className="px-2.5 sm:px-4 mb-[10pt] flex items-center gap-[10pt]">
+                            <div className="h-px flex-1 bg-[#3D3D3D]/15 dark:bg-[#F2F0EF]/20" />
+                            <h3 className="text-[10pt] sm:text-[11pt] font-semibold italic text-[#3D3D3D] dark:text-[#F2F0EF] text-center shrink-0">{t.organizational}</h3>
+                            <div className="h-px flex-1 bg-[#3D3D3D]/15 dark:bg-[#F2F0EF]/20" />
+                          </div>
+                          <Section gapClassName="gap-[7pt]" className="mb-0">
+                            {data.organizations.map((item, idx) => (
+                              <ListItem 
+                                key={idx} 
+                                year={item.year} 
+                                title={item.role} 
+                                titleEn={item.roleEn}
+                                subtitle={item.company} 
+                                location={item.location} 
+                                href={item.href} 
+                                lang={lang}
+                              />
+                            ))}
+                          </Section>
+                        </div>
+
+                        {data.research.length > 0 && (
+                          <div>
+                            <div className="px-2.5 sm:px-4 mb-[10pt] flex items-center gap-[10pt]">
+                              <div className="h-px flex-1 bg-[#3D3D3D]/15 dark:bg-[#F2F0EF]/20" />
+                              <h3 className="text-[10pt] sm:text-[11pt] font-semibold italic text-[#3D3D3D] dark:text-[#F2F0EF] text-center shrink-0">{t.research}</h3>
+                              <div className="h-px flex-1 bg-[#3D3D3D]/15 dark:bg-[#F2F0EF]/20" />
+                            </div>
+                            <Section gapClassName="gap-[7pt]" className="mb-0">
+                              {data.research.map((item, idx) => (
+                                <ListItem 
+                                  key={idx} 
+                                  year={item.year} 
+                                  title={item.title} 
+                                  titleEn={item.titleEn}
+                                  subtitle={item.subtitle} 
+                                  subtitleEn={item.subtitleEn}
+                                  location={item.location} 
+                                  href={item.href} 
+                                  lang={lang}
+                                />
+                              ))}
+                            </Section>
+                          </div>
+                        )}
+                      </div>
+                    )}
+
+                    {page === 14 && (
+                      <Section>
+                        {data.research.map((item, idx) => (
+                          <ListItem 
+                            key={idx} 
+                            year={item.year} 
+                            title={item.title} 
+                            titleEn={item.titleEn}
+                            subtitle={item.subtitle} 
+                            subtitleEn={item.subtitleEn}
+                            location={item.location} 
+                            href={item.href} 
+                            lang={lang}
                           />
                         ))}
                       </Section>

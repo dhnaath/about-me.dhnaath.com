@@ -468,7 +468,7 @@ export default function PortfolioApp({
       {
         title: "Assistant Branch Manager",
         period: "3 Maret s.d. 9 April 2025",
-        periodEn: "March 3 - April 9, 2025",
+        periodEn: "March 3 – April 9, 2025",
         location: "Kantor PosIND KCP Lanjak 78766",
         employmentType: "Magang (Internship)",
         employmentTypeEn: "Internship",
@@ -494,7 +494,7 @@ export default function PortfolioApp({
       {
         title: "Assistant Supervisor",
         period: "10 April s.d. 1 Juni 2025",
-        periodEn: "April 10 - June 1, 2025",
+        periodEn: "April 10 – June 1, 2025",
         location: "Kantor PosIND KPRK Sintang 78600",
         employmentType: "Magang (Internship)",
         employmentTypeEn: "Internship",
@@ -531,8 +531,8 @@ export default function PortfolioApp({
       {
         title: "Agen Oren by KOPNUS",
         period: "November 2025 s.d. Sekarang",
-        periodEn: "November 2025 - Present",
-        location: "KSP Nusantara - KopnusPos",
+        periodEn: "November 2025 – Present",
+        location: "KSP Nusantara – KopnusPos",
         employmentType: "Mandiri, Berbasis Komisi (Freelancer)",
         employmentTypeEn: "Independent, Commission-Based (Freelancer)",
         achievements: [
@@ -549,7 +549,7 @@ export default function PortfolioApp({
       {
         title: "Account Officer Lending",
         period: "September s.d. November 2025",
-        periodEn: "September - November 2025",
+        periodEn: "September – November 2025",
         location: "Kantor PosIND KCP Putussibau 78711",
         employmentType: "Kontrak (Contract)",
         employmentTypeEn: "Contract",
@@ -576,11 +576,11 @@ export default function PortfolioApp({
   const experiences = [
     // 1. Huachuang Singapore (Earliest)
     {
-      title: "Import - Export",
-      company: "TISCE - Ever Trust Tools\nHuachuang Singapore Pte. Ltd.",
+      title: "Import – Export",
+      company: "TISCE – Ever Trust Tools\nHuachuang Singapore Pte. Ltd.",
       location: "Singapore (Remote)",
       period: "November 2024 s.d. Februari 2025",
-      periodEn: "November 2024 - February 2025",
+      periodEn: "November 2024 – February 2025",
       employmentType: "Mandiri, Berbasis Komisi, Tanpa Gaji Pokok (Freelancer)",
       employmentTypeEn: "Independent, Commission-Based, No Basic Salary (Freelancer)",
       description: "Sourcing Platform; Global Partnership; RFQ; B2B; Freelance",
@@ -608,11 +608,11 @@ export default function PortfolioApp({
     // 2. Auto2000 (April - Oct 2023)
     {
       title: "Assistant Partman",
-      company: "TSO-Auto2000\nToyota Sales Operation\nPT Astra International Tbk",
+      company: "TSO–Auto2000\nToyota Sales Operation\nPT Astra International Tbk",
       companyUrl: "https://drive.google.com/file/d/1WnY9lj2eNExOMzY-hYszUR9plnWXxuiJ/view?usp=sharing",
       location: "Auto2000 Pasteur – Jl. Djunjunan No. 192, Kota Bandung, Jawa Barat",
       period: "7 Oktober 2024 s.d. 5 Januari 2025",
-      periodEn: "October 7, 2024 - January 5, 2025",
+      periodEn: "October 7, 2024 – January 5, 2025",
       employmentType: "Magang (Internship)",
       employmentTypeEn: "Internship",
       description: "Pergudangan; Persediaan; Suku Cadang; Otomotif; Dealer",
@@ -672,11 +672,11 @@ export default function PortfolioApp({
     },
     // 4. Prudential (Feb - Dec 2024)
     {
-      title: "Life Insurance Agent",
+      title: "Insurance Agent",
       company: "Prudential Life Assurance (PLA)\nPrudential Sharia Life Assurance (PSLA)",
       location: "KPM BD 21 – Malabar, Kota Bandung, Jawa Barat",
       period: "Februari s.d. Desember 2024",
-      periodEn: "February - December 2024",
+      periodEn: "February – December 2024",
       employmentType: "Mandiri, Berbasis Komisi, Tanpa Gaji Pokok (Freelancer)",
       employmentTypeEn: "Independent, Commission-Based, No Basic Salary (Freelancer)",
       description: "Keuangan; Asuransi Jiwa; Asuransi Kesehatan; Takaful Keluarga",
@@ -686,14 +686,14 @@ export default function PortfolioApp({
         "Menganalisis profil risiko, tujuan keuangan, dan kemampuan premi calon nasabah untuk merancang proposal ilustrasi asuransi (konvensional/syariah) yang sesuai kebutuhan.",
         "Membimbing calon nasabah dalam penyiapan dokumen SPAJ, menjelaskan hak-kewajiban secara transparan, serta mengawal proses pengajuan proposal.",
         "Berkoordinasi aktif dengan tim internal serta rutin mengikuti pelatihan, seminar, dan ujian sertifikasi produk baru guna menjaga pemahaman materi tetap aktual.",
-        "Menjaga kepatuhan terhadap kode etik keagenan berdasarkan lisensi AAJI-AASI, serta memastikan seluruh proses layanan sejalan dengan regulasi OJK.",
+        "Menjaga kepatuhan terhadap kode etik keagenan berdasarkan lisensi AAJI–AASI, serta memastikan seluruh proses layanan sejalan dengan regulasi OJK.",
         "Memantau perkembangan tren produk asuransi serta dinamika pasar ekonomi untuk memberikan edukasi literasi keuangan yang tepat kepada masyarakat."
       ],
       achievementsEn: [
         "Analyzed prospective clients' risk profiles, financial goals, and premium capabilities to design tailored insurance illustration proposals (conventional/sharia).",
         "Guided prospective clients in preparing SPAJ documents, explaining rights and obligations transparently, and overseeing the proposal submission process.",
         "Coordinated actively with the internal team and regularly attended training, seminars, and new product certification exams to keep knowledge up-to-date.",
-        "Maintained compliance with the agency code of ethics based on AAJI-AASI licenses, ensuring all service processes aligned with OJK regulations.",
+        "Maintained compliance with the agency code of ethics based on AAJI–AASI licenses, ensuring all service processes aligned with OJK regulations.",
         "Monitored trends in insurance products and economic market dynamics to provide appropriate financial literacy education to the public."
       ],
       image: "https://dhnaath.com/wp-content/uploads/2026/09/1733972999601.webp",
@@ -705,7 +705,7 @@ export default function PortfolioApp({
     // 5. GAO Tek (Jun - Nov 2024)
     {
       title: "Human Resources",
-      company: "GAO Tek Inc.\nGlobal Advanced Operations",
+      company: "GAO Tek Inc. & GAO RFID Inc.\nGlobal Advanced Operations",
       location: "Remote",
       period: "Agustus 2024",
       periodEn: "August 2024",
@@ -749,10 +749,10 @@ export default function PortfolioApp({
       ),
       location: "Pontianak",
       period: "Feb 2026 s.d. Sekarang",
-      periodEn: "Feb 2026 - Present",
+      periodEn: "Feb 2026 – Present",
       employmentType: "Mandiri, Tanpa Jam Operasional dan Wilayah Tetap (Freelancer)",
       employmentTypeEn: "Independent, No Fixed Operating Hours and Area (Freelancer)",
-      description: "Transportasi; Jasa Layanan; Kurir-Ojek; Pesan-Antar; Aplikasi",
+      description: "Transportasi; Jasa Layanan; Kurir–Ojek; Pesan–Antar; Aplikasi",
       tagColor: "#00B14F",
       achievements: [
         "Melayani transportasi penumpang serta distribusi makanan dan paket barang dengan memastikan keamanan, kebersihan, dan ketepatan waktu hingga ke lokasi tujuan.",
@@ -780,7 +780,7 @@ export default function PortfolioApp({
       company: "MUF\nPT Mandiri Utama Finance",
       location: "Pontianak, Kalimantan Barat",
       period: "Mar 2026 s.d. Sekarang",
-      periodEn: "Mar 2026 - Present",
+      periodEn: "Mar 2026 – Present",
       employmentType: "Mandiri, Berbasis Komisi, Tanpa Gaji, Tanpa Absensi (Freelancer)",
       employmentTypeEn: "Independent, Commission-Based, No Salary, No Attendance (Freelancer)",
       description: "BUMN; Keuangan; Leasing; Pembiayaan Kendaraan; Sales",
@@ -848,7 +848,7 @@ export default function PortfolioApp({
       textColor: "#FFFFFF",
     },
     {
-      title: "Six Sigma (64/80) - White Belt",
+      title: "Six Sigma (64/80) White Belt",
       description:
         "A Council for Six Sigma Certification (CSSC) Certified Six Sigma White Belt is an individual that has been provided, and has demonstrated an understanding of the most basic level of the Six Sigma Methodology. The White Belt Certification designation also reflects knowledge by the individual of the basic definition, history, and structure of the discipline. This understanding provides a solid awareness of who is involved in the actual Six Sigma implementation, and their roles within an organization.",
       type: "The Council for Six Sigma Certification (CSSC)",
@@ -859,7 +859,7 @@ export default function PortfolioApp({
       bgColor: "#d1d1d1",
     },
     {
-      title: "Lean Six Sigma (68/80) - White Belt",
+      title: "Lean Six Sigma (68/80) White Belt",
       description:
         "A Council for Six Sigma Certification (CSSC) Certified Lean Six Sigma White Belt is an individual that has been provided, and has demonstrated an understanding of the most basic level of the Six Sigma Methodology. The White Belt Certification designation also reflects knowledge by the individual of the basic definition, history, and structure of the discipline. This understanding provides a solid awareness of who is involved in the actual Six Sigma implementation, and their roles within an organization.",
       type: "The Council for Six Sigma Certification (CSSC)",
@@ -873,7 +873,7 @@ export default function PortfolioApp({
       title: "Sertifikasi Keagenan Asuransi Jiwa Syariah",
       description: "Lisensi Wajib Tenaga Pemasar Asuransi Syariah",
       type: "Asosiasi Asuransi Syariah Indonesia (AASI)",
-      date: "Februari 2024 - Februari 2026",
+      date: "Februari 2024 – Februari 2026",
       credentialId: "3321012070258823",
       tags: ["Asuransi Jiwa Syariah", "Ta'awun", "Tabarru'", "Takaful"],
       hideFileIcon: true,
@@ -884,7 +884,7 @@ export default function PortfolioApp({
       title: "Sertifikasi Keagenan Asuransi Jiwa",
       description: "Lisensi Wajib Tenaga Pemasar Asuransi",
       type: "Asosiasi Asuransi Jiwa Indonesia (AAJI)",
-      date: "Februari 2024 - Februari 2026",
+      date: "Februari 2024 – Februari 2026",
       credentialId: "15270228",
       tags: ["Asuransi Jiwa", "Asuransi Kesehatan", "Produk Asuransi Yang Dikaitkan Investasi (PAYDI)"],
       hideFileIcon: true,
@@ -892,7 +892,7 @@ export default function PortfolioApp({
       textColor: "#FFFFFF",
     },
     {
-      title: "SAP01 - SAP Overview",
+      title: "SAP01 SAP Overview",
       description:
         "SAP01 is the prerequisite course for all other SAP courses. SAP01 is designed to provide the participant with baseline knowledge of SAP solutions, applications, components, and terminology. Because this is an overview course the details of the SAP applications and components are left to subsequent courses.",
       type: "Edugate Indonesia",
@@ -904,7 +904,7 @@ export default function PortfolioApp({
       textColor: "#FFFFFF",
     },
     {
-      title: "CEFR - B1 Intermediate (302)",
+      title: "CEFR B1 Intermediate (302)",
       description: "The global mobile English test and certificate. Built by academic experts, aligned to an international standard (CEFR) and delivered using the latest AI technology.",
       type: "British Council",
       date: "Jun 2023",
@@ -1029,9 +1029,20 @@ export default function PortfolioApp({
 
       {/* Proyek Section */}
       <section id="proyek" className="pt-[50pt] pb-[0pt] bg-transparent w-full">
+        <style dangerouslySetInnerHTML={{__html: `
+          .proyek-content-scale {
+            zoom: 1.15;
+          }
+          @supports not (zoom: 1.15) {
+            .proyek-content-scale {
+              transform: scale(1.15);
+              transform-origin: center center;
+            }
+          }
+        `}} />
         <div className="w-full px-[2.5pt] md:px-[10pt]">
-          <div id="documentation" className="relative max-w-7xl mx-auto px-4 md:px-8">
-            <div className="hidden md:flex w-full gap-8 mb-6 mt-0">
+          <div id="documentation" className="relative max-w-[92rem] mx-auto px-4 md:px-8">
+            <div className="hidden md:flex w-full gap-[calc(2rem+50pt)] mb-6 mt-0">
               <div className="flex flex-col items-center gap-1 w-1/2">
                 <h2 className="text-xl md:text-2xl font-bold text-[#3D3D3D] dark:text-[#F2F0EF] text-center">
                   {lang === 'id' ? 'Kualifikasi Profil' : 'Profile Qualifications'}
@@ -1053,7 +1064,7 @@ export default function PortfolioApp({
                 </p>
               </div>
             </div>
-            <div className="flex flex-col md:flex-row items-stretch w-full gap-8">
+            <div className="flex flex-col md:flex-row items-stretch w-full gap-[calc(2rem+50pt)]">
               {/* Menu Section (50%) */}
               <div className="w-full md:w-1/2 flex flex-col items-center justify-center">
                 <div className="flex flex-col w-full h-full">
@@ -1094,7 +1105,7 @@ export default function PortfolioApp({
                       <ChevronLeft size={36} />
                     </button>
                     
-                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 w-[90%] md:w-full">
+                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 w-[90%] md:w-full proyek-content-scale">
                       {documentation.slice(docPage, docPage + 4).map((doc, index) => (
                         <DocumentationCard key={index} {...(doc as any)} compact />
                       ))}
@@ -1160,7 +1171,7 @@ export default function PortfolioApp({
                   >
                     <ChevronLeft size={36} />
                   </button>
-                  <div className={`flex flex-col justify-center gap-[5pt] w-[85%] md:w-full mx-auto aspect-[1000/1414] md:aspect-auto md:h-full`}>
+                  <div className={`flex flex-col justify-center gap-[5pt] w-[85%] md:w-full mx-auto aspect-[1000/1414] md:aspect-auto md:h-full proyek-content-scale`}>
                     {designGroups[designPage].map((design, index) => (
                       <div 
                         key={`${design.title}-${index}`}
@@ -1477,7 +1488,7 @@ export default function PortfolioApp({
                       category="Proyek Logistik III"
                       title="House of Quality"
                       content="Tugas besar berbentuk 𝗛𝗼𝘂𝘀𝗲 𝗼𝗳 𝗤𝘂𝗮𝗹𝗶𝘁𝘆 (𝗛𝗢𝗤) untuk memenuhi syarat kelulusan mata kuliah 𝗣𝗿𝗼𝘆𝗲𝗸 𝗟𝗼𝗴𝗶𝘀𝘁𝗶𝗸 𝟯 dalam kurikulum 𝗦𝗲𝗺𝗲𝘀𝘁𝗲𝗿 𝟱 pada studi 𝗦𝗮𝗿𝗷𝗮𝗻𝗮 𝗧𝗲𝗿𝗮𝗽𝗮𝗻 𝗟𝗼𝗴𝗶𝘀𝘁𝗶𝗸."
-                      darkContent="HOQ Inovasi Whoosh Pengiriman Barang Same Day Jakarta-Bandung"
+                      darkContent="HOQ Inovasi Whoosh Pengiriman Barang Same Day Jakarta–Bandung"
                       darkImages={[
                         "https://dhnaath.com/wp-content/uploads/2026/09/1708894126465-1.webp",
                         "https://dhnaath.com/wp-content/uploads/2026/09/1714586513717.webp"
@@ -1655,7 +1666,7 @@ export default function PortfolioApp({
                   <div className="w-[25.375rem]">
                     <FlipbookCard 
                       category="PRAMUKA"
-                      title="Jamnas X-2016"
+                      title="Jamnas X–2016"
                       content="Peserta Jambore Nasional X Tahun 2016."
                       darkImage="https://dhnaath.com/wp-content/uploads/2026/08/Desain-tanpa-judul-3-1_11zon.webp"
                       disableFlip={true}
