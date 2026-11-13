@@ -379,6 +379,7 @@ const data = {
     { year: "", role: "Himpunan Mahasiswa Pencinta Unggas", roleEn: "Poultry Lovers Student Association", company: "Universitas Syiah Kuala (USK)", location: "Banda Aceh, Indonesia", href: "#" },
     { year: "", role: "Mading dan Pers", roleEn: "Wall Magazine & Press", company: "SMA Negeri 8 Pontianak", location: "Pontianak, Indonesia", href: "#" }
   ],
+  community: [] as Array<{ year: string, role: React.ReactNode, roleEn?: React.ReactNode, company: React.ReactNode, companyEn?: React.ReactNode, location?: string, href?: string }>,
   certificate: [
     { 
       year: "2024", 
@@ -549,21 +550,71 @@ const data = {
       subtitle: (
         <>
           <span>Universitas Logistik dan Bisnis Internasional (ULBI)</span>
-          <span className="mt-[7pt]">PDDikti: 041104</span>
-          <span>Akreditasi: B (Baik Sekali)</span>
+          <span className="mt-[7pt]">PDDikti: 63311 (Prodi) · 041104 (Institusi)</span>
+          <span>Akreditasi: B (Prodi) · Baik Sekali (Institusi)</span>
         </>
       ), 
       subtitleEn: (
         <>
           <span>International Logistics and Business University (ULBI)</span>
-          <span className="mt-[7pt]">PDDikti: 041104</span>
-          <span>Accreditation: B (Very Good)</span>
+          <span className="mt-[7pt]">PDDikti: 63311 (Study Program) · 041104 (Institution)</span>
+          <span>Accreditation: B (Study Program) · Very Good (Institution)</span>
         </>
       ), 
       location: "Bandung", 
       href: "https://pddikti.kemdiktisaintek.go.id/detail-prodi/ODloXNDeYp9ggYjIE1_rHnAoLqKGWJDhO3uFfP-zRjprQ4PjJGEX5QcL9E1w28bgTBt3vQ==" 
     }
   ],
+  nonDegree: [
+    { 
+      year: "2024", 
+      title: "Pelatihan & Kursus SAP01 (SAP Overview)", 
+      titleEn: "SAP01 Training & Course (SAP Overview)", 
+      subtitle: (
+        <>
+          <span>Edugate Indonesia</span>
+          <span>Lembaga Pelatihan & Kursus Profesional</span>
+        </>
+      ), 
+      subtitleEn: (
+        <>
+          <span>Edugate Indonesia</span>
+          <span>Professional Course & Training Institution</span>
+        </>
+      ), 
+      location: "Indonesia", 
+      href: "https://drive.google.com/file/d/1Ypt10VSW6fdkUm3HKLJBodaQpTSl1OcJ/view?usp=sharing" 
+    },
+    { 
+      year: "2025", 
+      title: "Dasar Procurement & Purchasing di Perusahaan", 
+      titleEn: "Fundamentals of Corporate Procurement & Purchasing",
+      subtitle: (
+        <>
+          <span>Ioda Academy</span>
+          <span>Program Pembelajaran Vokasi & Pelatihan Kerja</span>
+        </>
+      ), 
+      subtitleEn: (
+        <>
+          <span>Ioda Academy</span>
+          <span>Vocational Development & Work Training</span>
+        </>
+      ), 
+      location: "Indonesia", 
+      href: "https://drive.google.com/file/d/1hEQUPywU-ce3x1P-zyiUre65oYf4bZhV/view?usp=drive_link" 
+    }
+  ] as Array<{
+    year: string,
+    title: React.ReactNode,
+    titleEn?: React.ReactNode,
+    subtitle?: React.ReactNode,
+    subtitleEn?: React.ReactNode,
+    leftInfo?: React.ReactNode,
+    leftInfoEn?: React.ReactNode,
+    location?: string,
+    href?: string
+  }>,
   workshop: [] as Array<{ year: string, title: string, titleEn?: string, subtitle?: string, subtitleEn?: string, location?: string, href?: string }>,
   research: [] as Array<{ year: string, title: string, titleEn?: string, subtitle?: React.ReactNode, subtitleEn?: React.ReactNode, location?: string, href?: string }>
 };
@@ -793,24 +844,38 @@ const ListItem: React.FC<{
       </div>
     </div>
   ) : (
-    <div className={`flex flex-col sm:flex-row gap-1 sm:gap-4 items-start sm:items-center group ${paddingY || 'p-2.5 sm:p-4'} px-2.5 sm:px-4 rounded-lg sm:rounded-xl hover:bg-[#EAE8E6] dark:hover:bg-[#737171] transition-colors`}>
-      <div className="flex-1 flex flex-col sm:flex-row justify-between gap-1 sm:gap-4 w-full items-start sm:items-center min-w-0">
-        <div className="flex flex-col items-start pr-1 sm:pr-4 flex-1 min-w-0">
-          <span className="text-[0.78rem] sm:text-[0.875rem] font-medium text-[#3D3D3D] dark:text-[#F2F0EF] leading-[1.5] sm:leading-[1.6]">{displayTitle}</span>
-          {displaySubtitle && <span className="text-[0.7rem] sm:text-[0.875rem] text-[#3D3D3D]/80 dark:text-[#F2F0EF]/80 leading-[1.5] sm:leading-[1.6] mt-0.5 flex flex-col gap-0.5">{displaySubtitle}</span>}
-          {year && <span className="text-[0.7rem] sm:text-[0.8125rem] text-[#3D3D3D]/80 dark:text-[#F2F0EF]/80 leading-[1.5] sm:leading-[1.6] mt-0.5">{year}</span>}
-        </div>
-        {displayLocation && (
-          <div className="text-[0.68rem] sm:text-[0.875rem] text-[#3D3D3D]/80 dark:text-[#F2F0EF] sm:text-right whitespace-nowrap shrink-0 flex items-center sm:justify-end">
-            {displayLocation}
+    <div className={`flex flex-col justify-center group ${paddingY || 'p-2.5 sm:p-4'} px-2.5 sm:px-4 rounded-lg sm:rounded-xl hover:bg-[#EAE8E6] dark:hover:bg-[#737171] transition-colors w-full`}>
+      <div className="flex flex-row justify-between items-center gap-2 sm:gap-4 w-full min-w-0">
+        <div className="flex items-center gap-[30px] min-w-0 flex-1 pr-1 sm:pr-4">
+          {year && (
+            <span className="text-[0.78rem] sm:text-[0.875rem] font-medium text-[#3D3D3D]/80 dark:text-[#F2F0EF]/80 shrink-0 whitespace-nowrap tabular-nums leading-normal flex items-center">
+              {year}
+            </span>
+          )}
+          <div className="flex flex-col items-start justify-center min-w-0 flex-1">
+            <span className="text-[0.78rem] sm:text-[0.875rem] font-medium text-[#3D3D3D] dark:text-[#F2F0EF] leading-[1.5] sm:leading-[1.6]">
+              {displayTitle}
+            </span>
+            {displaySubtitle && (
+              <span className="text-[0.7rem] sm:text-[0.875rem] text-[#3D3D3D]/80 dark:text-[#F2F0EF]/80 leading-[1.5] sm:leading-[1.6] mt-0.5 flex flex-col gap-0.5">
+                {displaySubtitle}
+              </span>
+            )}
           </div>
-        )}
-      </div>
-      {href && href !== '#' && !hideArrow && (
-        <div className="ml-2 shrink-0 opacity-0 group-hover:opacity-100 transition-opacity hidden sm:block">
-          <ArrowUpRight className="w-4 h-4 text-[#3D3D3D]/40 dark:text-[#F2F0EF]/40" />
         </div>
-      )}
+        <div className="flex items-center justify-end gap-2 shrink-0 whitespace-nowrap text-right">
+          {displayLocation && (
+            <span className="text-[0.78rem] sm:text-[0.875rem] text-[#3D3D3D]/80 dark:text-[#F2F0EF] text-right whitespace-nowrap flex items-center justify-end">
+              {displayLocation}
+            </span>
+          )}
+          {href && href !== '#' && !hideArrow && (
+            <span className="ml-1 shrink-0 opacity-0 group-hover:opacity-100 transition-opacity hidden sm:inline-flex items-center">
+              <ArrowUpRight className="w-4 h-4 text-[#3D3D3D]/40 dark:text-[#F2F0EF]/40" />
+            </span>
+          )}
+        </div>
+      </div>
     </div>
   );
 
@@ -953,7 +1018,7 @@ export default function ResumeApp({
 
   const paginate = (newDirection: number) => {
     const nextPage = page + newDirection;
-    if (nextPage >= 0 && nextPage <= 14) {
+    if (nextPage >= 0 && nextPage <= 16) {
       setPage([nextPage, newDirection]);
     }
   };
@@ -968,10 +1033,12 @@ export default function ResumeApp({
       freelance: "Freelance",
       contribution: "Contribution",
       organizational: "Organizational",
+      community: "Community",
       research: "Research",
       education: "Education",
       formalSchool: "Formal School",
       tertiaryDegree: "Tertiary Degree",
+      nonDegree: "Non-Degree",
       workshop: "Workshop",
       competency: "Competency",
       certificate: "Certificates",
@@ -988,10 +1055,12 @@ export default function ResumeApp({
       freelance: "Pekerja Lepas",
       contribution: "Kontribusi",
       organizational: "Organisasi",
+      community: "Komunitas",
       research: "Penelitian",
       education: "Pendidikan",
       formalSchool: "Sekolah Formal",
       tertiaryDegree: "Pendidikan Tinggi",
+      nonDegree: "Non-Degree",
       workshop: "Lokakarya",
       competency: "Kompetensi",
       certificate: "Sertifikat",
@@ -1082,7 +1151,7 @@ export default function ResumeApp({
                     </button>
                     
                     {/* Sub-categories / Anak Kategori (4 items) */}
-                    <div className="flex flex-col gap-0.5 sm:gap-1 pl-2 sm:pl-3 ml-2 sm:ml-3 border-l-2 border-[#3D3D3D]/20 dark:border-[#F2F0EF]/25 my-1">
+                    <div className="flex flex-col gap-0.5 sm:gap-1 pl-2 sm:pl-2.5 ml-[1.375rem] sm:ml-[1.65rem] border-l-2 border-[#3D3D3D]/20 dark:border-[#F2F0EF]/25 my-1">
                       <button 
                         onClick={() => setPage([0, 0 > page ? 1 : -1])} 
                         className={`text-left px-2.5 sm:px-3 py-1 sm:py-2 rounded-lg sm:rounded-xl text-[9pt] sm:text-[9.5pt] lg:text-[10.5pt] font-medium transition-colors ${page === 0 ? 'bg-black text-white dark:bg-white dark:text-black italic font-semibold shadow-sm' : 'bg-transparent text-black/80 hover:bg-[#E6E4E3] dark:text-white/80 dark:hover:bg-[#8C8B8B] italic'}`}
@@ -1110,7 +1179,7 @@ export default function ResumeApp({
                     </div>
                   </div>
 
-                  {/* Education Group (Parent Category with 2 Children) */}
+                  {/* Education Group (Parent Category with 3 Children) */}
                   <div className="flex flex-col">
                     <button 
                       onClick={() => setPage([11, 11 > page ? 1 : -1])}
@@ -1119,8 +1188,8 @@ export default function ResumeApp({
                       {t.education}
                     </button>
                     
-                    {/* Sub-categories / Anak Kategori (2 items) */}
-                    <div className="flex flex-col gap-0.5 sm:gap-1 pl-2 sm:pl-3 ml-2 sm:ml-3 border-l-2 border-[#3D3D3D]/20 dark:border-[#F2F0EF]/25 my-1">
+                    {/* Sub-categories / Anak Kategori (3 items) */}
+                    <div className="flex flex-col gap-0.5 sm:gap-1 pl-2 sm:pl-2.5 ml-[1.375rem] sm:ml-[1.65rem] border-l-2 border-[#3D3D3D]/20 dark:border-[#F2F0EF]/25 my-1">
                       <button 
                         onClick={() => setPage([6, 6 > page ? 1 : -1])} 
                         className={`text-left px-2.5 sm:px-3 py-1 sm:py-2 rounded-lg sm:rounded-xl text-[9pt] sm:text-[9.5pt] lg:text-[10.5pt] font-medium transition-colors ${page === 6 ? 'bg-black text-white dark:bg-white dark:text-black italic font-semibold shadow-sm' : 'bg-transparent text-black/80 hover:bg-[#E6E4E3] dark:text-white/80 dark:hover:bg-[#8C8B8B] italic'}`}
@@ -1132,6 +1201,12 @@ export default function ResumeApp({
                         className={`text-left px-2.5 sm:px-3 py-1 sm:py-2 rounded-lg sm:rounded-xl text-[9pt] sm:text-[9.5pt] lg:text-[10.5pt] font-medium transition-colors ${page === 5 ? 'bg-black text-white dark:bg-white dark:text-black italic font-semibold shadow-sm' : 'bg-transparent text-black/80 hover:bg-[#E6E4E3] dark:text-white/80 dark:hover:bg-[#8C8B8B] italic'}`}
                       >
                         {t.formalSchool}
+                      </button>
+                      <button 
+                        onClick={() => setPage([15, 15 > page ? 1 : -1])} 
+                        className={`text-left px-2.5 sm:px-3 py-1 sm:py-2 rounded-lg sm:rounded-xl text-[9pt] sm:text-[9.5pt] lg:text-[10.5pt] font-medium transition-colors ${page === 15 ? 'bg-black text-white dark:bg-white dark:text-black italic font-semibold shadow-sm' : 'bg-transparent text-black/80 hover:bg-[#E6E4E3] dark:text-white/80 dark:hover:bg-[#8C8B8B] italic'}`}
+                      >
+                        {t.nonDegree}
                       </button>
                     </div>
                   </div>
@@ -1146,7 +1221,7 @@ export default function ResumeApp({
                     </button>
                     
                     {/* Sub-categories / Anak Kategori (3 items) */}
-                    <div className="flex flex-col gap-0.5 sm:gap-1 pl-2 sm:pl-3 ml-2 sm:ml-3 border-l-2 border-[#3D3D3D]/20 dark:border-[#F2F0EF]/25 my-1">
+                    <div className="flex flex-col gap-0.5 sm:gap-1 pl-2 sm:pl-2.5 ml-[1.375rem] sm:ml-[1.65rem] border-l-2 border-[#3D3D3D]/20 dark:border-[#F2F0EF]/25 my-1">
                       <button 
                         onClick={() => setPage([7, 7 > page ? 1 : -1])} 
                         className={`text-left px-2.5 sm:px-3 py-1 sm:py-2 rounded-lg sm:rounded-xl text-[9pt] sm:text-[9.5pt] lg:text-[10.5pt] font-medium transition-colors ${page === 7 ? 'bg-black text-white dark:bg-white dark:text-black italic font-semibold shadow-sm' : 'bg-transparent text-black/80 hover:bg-[#E6E4E3] dark:text-white/80 dark:hover:bg-[#8C8B8B] italic'}`}
@@ -1168,7 +1243,7 @@ export default function ResumeApp({
                     </div>
                   </div>
 
-                  {/* Contribution Group (Parent Category with 2 Children) */}
+                  {/* Contribution Group (Parent Category with 3 Children) */}
                   <div className="flex flex-col">
                     <button 
                       onClick={() => setPage([13, 13 > page ? 1 : -1])}
@@ -1177,13 +1252,19 @@ export default function ResumeApp({
                       {t.contribution}
                     </button>
                     
-                    {/* Sub-categories / Anak Kategori (2 items) */}
-                    <div className="flex flex-col gap-0.5 sm:gap-1 pl-2 sm:pl-3 ml-2 sm:ml-3 border-l-2 border-[#3D3D3D]/20 dark:border-[#F2F0EF]/25 my-1">
+                    {/* Sub-categories / Anak Kategori (3 items) */}
+                    <div className="flex flex-col gap-0.5 sm:gap-1 pl-2 sm:pl-2.5 ml-[1.375rem] sm:ml-[1.65rem] border-l-2 border-[#3D3D3D]/20 dark:border-[#F2F0EF]/25 my-1">
                       <button 
                         onClick={() => setPage([4, 4 > page ? 1 : -1])} 
                         className={`text-left px-2.5 sm:px-3 py-1 sm:py-2 rounded-lg sm:rounded-xl text-[9pt] sm:text-[9.5pt] lg:text-[10.5pt] font-medium transition-colors ${page === 4 ? 'bg-black text-white dark:bg-white dark:text-black italic font-semibold shadow-sm' : 'bg-transparent text-black/80 hover:bg-[#E6E4E3] dark:text-white/80 dark:hover:bg-[#8C8B8B] italic'}`}
                       >
                         {t.organizational}
+                      </button>
+                      <button 
+                        onClick={() => setPage([16, 16 > page ? 1 : -1])} 
+                        className={`text-left px-2.5 sm:px-3 py-1 sm:py-2 rounded-lg sm:rounded-xl text-[9pt] sm:text-[9.5pt] lg:text-[10.5pt] font-medium transition-colors ${page === 16 ? 'bg-black text-white dark:bg-white dark:text-black italic font-semibold shadow-sm' : 'bg-transparent text-black/80 hover:bg-[#E6E4E3] dark:text-white/80 dark:hover:bg-[#8C8B8B] italic'}`}
+                      >
+                        {t.community}
                       </button>
                       <button 
                         onClick={() => setPage([14, 14 > page ? 1 : -1])} 
@@ -1445,7 +1526,7 @@ export default function ResumeApp({
                       </div>
                     )}
 
-                    {/* Combined Recap: Education (All 2 Sub-categories) */}
+                    {/* Combined Recap: Education (All 3 Sub-categories) */}
                     {page === 11 && (
                       <div className="flex flex-col gap-[10pt] pb-6">
                         <div>
@@ -1496,6 +1577,33 @@ export default function ResumeApp({
                             ))}
                           </Section>
                         </div>
+
+                        {data.nonDegree && data.nonDegree.length > 0 && (
+                          <div>
+                            <div className="px-2.5 sm:px-4 mb-[10pt] flex items-center gap-[10pt]">
+                              <div className="h-px flex-1 bg-[#3D3D3D]/15 dark:bg-[#F2F0EF]/20" />
+                              <h3 className="text-[10pt] sm:text-[11pt] font-semibold italic text-[#3D3D3D] dark:text-[#F2F0EF] text-center shrink-0">{t.nonDegree}</h3>
+                              <div className="h-px flex-1 bg-[#3D3D3D]/15 dark:bg-[#F2F0EF]/20" />
+                            </div>
+                            <Section gapClassName="gap-[7pt]" className="mb-0">
+                              {data.nonDegree.map((item, idx) => (
+                                <ListItem 
+                                  key={idx} 
+                                  year={item.year} 
+                                  leftInfo={item.leftInfo}
+                                  leftInfoEn={item.leftInfoEn}
+                                  title={item.title} 
+                                  titleEn={item.titleEn}
+                                  subtitle={item.subtitle} 
+                                  subtitleEn={item.subtitleEn}
+                                  location={item.location} 
+                                  href={item.href} 
+                                  lang={lang}
+                                />
+                              ))}
+                            </Section>
+                          </div>
+                        )}
                       </div>
                     )}
 
@@ -1607,6 +1715,31 @@ export default function ResumeApp({
                           </Section>
                         </div>
 
+                        {data.community && data.community.length > 0 && (
+                          <div>
+                            <div className="px-2.5 sm:px-4 mb-[10pt] flex items-center gap-[10pt]">
+                              <div className="h-px flex-1 bg-[#3D3D3D]/15 dark:bg-[#F2F0EF]/20" />
+                              <h3 className="text-[10pt] sm:text-[11pt] font-semibold italic text-[#3D3D3D] dark:text-[#F2F0EF] text-center shrink-0">{t.community}</h3>
+                              <div className="h-px flex-1 bg-[#3D3D3D]/15 dark:bg-[#F2F0EF]/20" />
+                            </div>
+                            <Section gapClassName="gap-[7pt]" className="mb-0">
+                              {data.community.map((item, idx) => (
+                                <ListItem 
+                                  key={idx} 
+                                  year={item.year} 
+                                  title={item.role} 
+                                  titleEn={item.roleEn}
+                                  subtitle={item.company} 
+                                  subtitleEn={(item as any).companyEn}
+                                  location={item.location} 
+                                  href={item.href} 
+                                  lang={lang}
+                                />
+                              ))}
+                            </Section>
+                          </div>
+                        )}
+
                         {data.research.length > 0 && (
                           <div>
                             <div className="px-2.5 sm:px-4 mb-[10pt] flex items-center gap-[10pt]">
@@ -1649,6 +1782,56 @@ export default function ResumeApp({
                             lang={lang}
                           />
                         ))}
+                      </Section>
+                    )}
+
+                    {page === 15 && (
+                      <Section>
+                        {data.nonDegree && data.nonDegree.length > 0 ? (
+                          data.nonDegree.map((item, idx) => (
+                            <ListItem 
+                              key={idx} 
+                              year={item.year} 
+                              leftInfo={item.leftInfo}
+                              leftInfoEn={item.leftInfoEn}
+                              title={item.title} 
+                              titleEn={item.titleEn}
+                              subtitle={item.subtitle} 
+                              subtitleEn={item.subtitleEn}
+                              location={item.location} 
+                              href={item.href} 
+                              lang={lang}
+                            />
+                          ))
+                        ) : (
+                          <div className="py-8 text-center text-[#3D3D3D]/60 dark:text-[#F2F0EF]/60 text-[0.875rem] italic">
+                            {lang === 'id' ? 'Belum ada data non-degree.' : 'No non-degree education records yet.'}
+                          </div>
+                        )}
+                      </Section>
+                    )}
+
+                    {page === 16 && (
+                      <Section>
+                        {data.community && data.community.length > 0 ? (
+                          data.community.map((item, idx) => (
+                            <ListItem 
+                              key={idx} 
+                              year={item.year} 
+                              title={item.role} 
+                              titleEn={item.roleEn}
+                              subtitle={item.company} 
+                              subtitleEn={(item as any).companyEn}
+                              location={item.location} 
+                              href={item.href} 
+                              lang={lang}
+                            />
+                          ))
+                        ) : (
+                          <div className="py-8 text-center text-[#3D3D3D]/60 dark:text-[#F2F0EF]/60 text-[0.875rem] italic">
+                            {lang === 'id' ? 'Belum ada data komunitas.' : 'No community involvement records yet.'}
+                          </div>
+                        )}
                       </Section>
                     )}
                   </motion.div>
