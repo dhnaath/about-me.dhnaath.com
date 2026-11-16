@@ -1,22 +1,11 @@
-import { useState } from "react";
+import { memo, useState } from "react";
 import { FileText, ExternalLink } from "lucide-react";
+import { isSafeHref } from "../../../utils/url";
+import type { DocumentationCardProps } from "../types";
 
-interface DocumentationCardProps {
-  title: string;
-  description: string;
-  type: string;
-  tags: string[];
-  link?: string;
-  externalLink?: string;
-  bgColor?: string;
-  textColor?: string;
-  hideFileIcon?: boolean;
-  date?: string;
-  credentialId?: string;
-  compact?: boolean;
-}
+export type { DocumentationCardProps };
 
-export function DocumentationCard({
+export const DocumentationCard = memo(function DocumentationCard({
   title,
   description,
   type,
@@ -38,6 +27,10 @@ export function DocumentationCard({
     ? description 
     : `${description.slice(0, maxLength)}...`;
 
+  const safeLink = isSafeHref(link) ? link : undefined;
+  const actionUrl = externalLink || link;
+  const safeActionLink = isSafeHref(actionUrl) ? actionUrl : undefined;
+
   return (
     <div 
       className={`rounded-lg shadow-md hover:shadow-lg transition-shadow flex flex-col h-full ${compact ? 'p-[0.85rem] md:p-4' : 'p-6'}`}
@@ -45,8 +38,8 @@ export function DocumentationCard({
     >
       <div className={`flex items-start justify-between ${compact ? 'mb-[0.425rem] md:mb-2' : 'mb-4'}`} >
         {!hideFileIcon && (
-          link ? (
-            <a href={link} target="_blank" rel="noopener noreferrer" className={`bg-[#F4F3F0] rounded-lg hover:bg-[#E5E4E2] transition-colors cursor-pointer ${compact ? 'p-[0.425rem] md:p-2' : 'p-3'}`}>
+          safeLink ? (
+            <a href={safeLink} target="_blank" rel="noopener noreferrer" className={`bg-[#F4F3F0] rounded-lg hover:bg-[#E5E4E2] transition-colors cursor-pointer ${compact ? 'p-[0.425rem] md:p-2' : 'p-3'}`}>
               <FileText className={`text-[#5B6572] ${compact ? 'w-[13.6px] h-[13.6px] md:w-4 md:h-4' : 'w-6 h-6'}`} />
             </a>
           ) : (
@@ -55,9 +48,9 @@ export function DocumentationCard({
             </div>
           )
         )}
-        {(externalLink || link) && (
+        {safeActionLink && (
           <a
-            href={externalLink || link}
+            href={safeActionLink}
             target="_blank"
             rel="noopener noreferrer"
             className={`transition-colors ml-auto flex items-center ${textColor ? 'hover:opacity-80' : 'text-[#5B6572] hover:text-[#222222]'}`}
@@ -115,7 +108,7 @@ export function DocumentationCard({
       <div className={`flex flex-wrap ${compact ? 'gap-[0.2125rem] md:gap-1 mt-auto' : 'gap-2'}`}>
         {tags.map((tag, index) => (
           <span
-            key={index}
+            key={`${tag}-${index}`}
             className={`${compact ? 'px-[0.425rem] py-[0.10625rem] text-[0.53125rem] leading-[0.796875rem] md:px-2 md:py-0.5 md:text-[0.625rem] md:leading-normal' : 'px-3 py-1 text-sm'} rounded-full ${!textColor ? 'bg-[#F4F3F0] text-[#5B6572]' : 'bg-white/20'}`}
             style={textColor ? { color: textColor } : {}}
           >
@@ -125,4 +118,4 @@ export function DocumentationCard({
       </div>
     </div>
   );
-}
+});

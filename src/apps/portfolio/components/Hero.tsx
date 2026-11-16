@@ -1,6 +1,7 @@
 import { motion } from "motion/react";
+import type { Language } from "../../../types";
 
-export function Hero({ lang = 'id' }: { lang?: 'en' | 'id' }) {
+export function Hero({ lang = 'id' }: { lang?: Language }) {
   return (
     <section id="home" className="flex flex-col items-center justify-center bg-[#F4F3F0] relative pt-[50pt] pb-[50pt] px-[10pt]">
       <div className="flex flex-col items-center max-w-[calc(56rem+220pt)] w-full text-center">

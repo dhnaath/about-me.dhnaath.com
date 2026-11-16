@@ -1,10 +1,8 @@
-import React, { useState, useEffect } from 'react';
-import { Document, Page, pdfjs } from 'react-pdf';
+import { Document, Page } from 'react-pdf';
 import 'react-pdf/dist/Page/AnnotationLayer.css';
 import 'react-pdf/dist/Page/TextLayer.css';
-
-// Reuse the existing worker setup
-pdfjs.GlobalWorkerOptions.workerSrc = `https://unpkg.com/pdfjs-dist@${pdfjs.version}/build/pdf.worker.min.mjs`;
+import { usePdfSource } from '../../../hooks/usePdfSource';
+import { useWindowWidth } from '../../../hooks/useWindowWidth';
 
 interface TranscriptImageProps {
   src: string;
@@ -12,41 +10,16 @@ interface TranscriptImageProps {
 }
 
 export function TranscriptImage({ src, alt }: TranscriptImageProps) {
-  const [numPages, setNumPages] = useState<number | null>(null);
-  const [pdfData, setPdfData] = useState<Blob | null>(null);
-  const [pdfError, setPdfError] = useState<boolean>(false);
-
   const isPdf = src.toLowerCase().endsWith('.pdf');
-
-  useEffect(() => {
-    if (!isPdf) return;
-
-    let isMounted = true;
-    const abortController = new AbortController();
-
-    // Safely pre-fetch the PDF to avoid unhandled pdf.js exceptions when file is 404
-    fetch(src, { signal: abortController.signal })
-      .then((response) => {
-        if (!response.ok) {
-          throw new Error('Network response was not ok');
-        }
-        return response.blob();
-      })
-      .then((blob) => {
-        if (isMounted) setPdfData(blob);
-      })
-      .catch((error) => {
-        if (error.name !== 'AbortError') {
-          console.log('Suppressed fetch error for PDF:', src);
-          if (isMounted) setPdfError(true);
-        }
-      });
-
-    return () => {
-      isMounted = false;
-      abortController.abort();
-    };
-  }, [src, isPdf]);
+  const windowWidth = useWindowWidth(840, isPdf);
+  const {
+    numPages,
+    pdfData,
+    pdfError,
+    onDocumentLoadSuccess,
+    onDocumentLoadError,
+    onDocumentSourceError,
+  } = usePdfSource(src, { enabled: isPdf, errorLabel: 'PDF' });
 
   if (isPdf) {
     if (pdfError) {
@@ -70,23 +43,25 @@ export function TranscriptImage({ src, alt }: TranscriptImageProps) {
       );
     }
 
+    const pageWidth = Math.max(240, Math.min(windowWidth - 40, 800));
+
     return (
       <div className="w-full flex flex-col items-center relative -mt-[15pt] overflow-hidden px-4 md:px-0">
         <Document
           file={pdfData}
-          onLoadSuccess={({ numPages }) => setNumPages(numPages)}
-          onLoadError={(error) => console.log('PDF load suppressed:', error.message)}
-          onSourceError={(error) => console.log('PDF source error suppressed:', error.message)}
+          onLoadSuccess={onDocumentLoadSuccess}
+          onLoadError={onDocumentLoadError}
+          onSourceError={onDocumentSourceError}
           loading={<div className="text-[#5B6572] py-10 font-serif italic text-lg">Loading Pages...</div>}
           className="max-w-full drop-shadow-lg"
         >
-          {Array.from(new Array(numPages || 0), (el, index) => (
+          {Array.from({ length: numPages || 0 }, (_, index) => (
             <div key={`page_${index + 1}`} className="mb-4 max-w-full overflow-hidden bg-white border-2 border-[#5B6572]/20 rounded-[2rem] shadow-sm">
-              <Page 
-                pageNumber={index + 1} 
+              <Page
+                pageNumber={index + 1}
                 renderTextLayer={false}
                 renderAnnotationLayer={false}
-                width={typeof window !== 'undefined' ? Math.min(window.innerWidth - 40, 800) : 800}
+                width={pageWidth}
                 className="max-w-full flex justify-center p-4 md:p-8"
               />
             </div>
@@ -101,7 +76,8 @@ export function TranscriptImage({ src, alt }: TranscriptImageProps) {
       <img
         src={src}
         alt={alt}
-        
+        loading="lazy"
+        decoding="async"
         className="w-full max-h-[43.75rem] object-contain mix-blend-multiply pointer-events-none select-none"
         draggable={false}
         onContextMenu={(e) => e.preventDefault()}

@@ -21,6 +21,8 @@ export function CreativeCard({
         <img
           src={image}
           alt={title}
+          loading="lazy"
+          decoding="async"
           className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
         />
         <div className="absolute top-4 right-4 bg-white px-3 py-1 rounded-full flex items-center gap-2">
@@ -34,7 +36,7 @@ export function CreativeCard({
         <div className="flex flex-wrap gap-2">
           {tags.map((tag, index) => (
             <span
-              key={index}
+              key={`${tag}-${index}`}
               className="px-3 py-1 bg-[#F4F3F0] text-[#5B6572] rounded-full text-sm"
             >
               {tag}

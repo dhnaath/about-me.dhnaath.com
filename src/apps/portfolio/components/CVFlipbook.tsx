@@ -1,57 +1,39 @@
-import React, { useState, useEffect } from 'react';
+import type { CSSProperties, ComponentType, ReactNode } from 'react';
 import HTMLFlipBook from 'react-pageflip';
-import { Document, Page, pdfjs } from 'react-pdf';
+import { Document, Page } from 'react-pdf';
 import 'react-pdf/dist/Page/AnnotationLayer.css';
 import 'react-pdf/dist/Page/TextLayer.css';
+import { usePdfSource } from '../../../hooks/usePdfSource';
+import { useWindowWidth } from '../../../hooks/useWindowWidth';
 
-// Set up the PDF.js worker
-pdfjs.GlobalWorkerOptions.workerSrc = `https://unpkg.com/pdfjs-dist@${pdfjs.version}/build/pdf.worker.min.mjs`;
+interface FlipBookProps {
+  width: number;
+  height: number;
+  size?: 'fixed' | 'stretch';
+  minWidth?: number;
+  maxWidth?: number;
+  minHeight?: number;
+  maxHeight?: number;
+  maxShadowOpacity?: number;
+  showCover?: boolean;
+  mobileScrollSupport?: boolean;
+  className?: string;
+  style?: CSSProperties;
+  children: ReactNode;
+}
 
-const FlipBook = HTMLFlipBook as any;
+const FlipBook = HTMLFlipBook as unknown as ComponentType<FlipBookProps>;
 
 export function CVFlipbook({ pdfUrl = "https://dhnaath.com/wp-content/uploads/2026/08/CV-DHIA-NAJMI-ATHALLAH.pdf", title = "Interactive Document" }: { pdfUrl?: string, title?: string }) {
-  const [numPages, setNumPages] = useState<number | null>(null);
-  const [windowWidth, setWindowWidth] = useState(typeof window !== 'undefined' ? window.innerWidth : 1024);
-  const [pdfData, setPdfData] = useState<Blob | null>(null);
-  const [pdfError, setPdfError] = useState<boolean>(false);
-
-  useEffect(() => {
-    const handleResize = () => setWindowWidth(window.innerWidth);
-    window.addEventListener('resize', handleResize);
-    return () => window.removeEventListener('resize', handleResize);
-  }, []);
-
-  useEffect(() => {
-    if (!pdfUrl) return;
-
-    let isMounted = true;
-    const abortController = new AbortController();
-
-    // Safely pre-fetch the PDF to avoid unhandled pdf.js exceptions
-    fetch(pdfUrl, { signal: abortController.signal })
-      .then((response) => {
-        if (!response.ok) throw new Error('Network response was not ok');
-        return response.blob();
-      })
-      .then((blob) => {
-        if (isMounted) setPdfData(blob);
-      })
-      .catch((error) => {
-        if (error.name !== 'AbortError') {
-          console.log('Suppressed fetch error for main CV PDF:', pdfUrl);
-          if (isMounted) setPdfError(true);
-        }
-      });
-
-    return () => {
-      isMounted = false;
-      abortController.abort();
-    };
-  }, [pdfUrl]);
-
-  function onDocumentLoadSuccess({ numPages }: { numPages: number }) {
-    setNumPages(numPages);
-  }
+  const windowWidth = useWindowWidth(1024);
+  const {
+    numPages,
+    pdfData,
+    pdfError,
+    onDocumentLoadSuccess,
+    onDocumentLoadError,
+    onDocumentSourceError,
+  } = usePdfSource(pdfUrl, { errorLabel: 'main CV PDF' });
 
   // Calculate width based on screen size to make it responsive
   const getPageWidth = () => {
@@ -83,12 +65,12 @@ export function CVFlipbook({ pdfUrl = "https://dhnaath.com/wp-content/uploads/20
           <Document
             file={pdfData}
             onLoadSuccess={onDocumentLoadSuccess}
-            onLoadError={(error) => console.log('PDF load suppressed:', error.message)}
-            onSourceError={(error) => console.log('PDF source error suppressed:', error.message)}
+            onLoadError={onDocumentLoadError}
+            onSourceError={onDocumentSourceError}
             loading={<div className="text-[#5B6572] py-20 text-center italic">Processing PDF Pages...</div>}
             error={<div className="text-red-500 py-20 text-center">Failed to process PDF Document.</div>}
           >
-            {numPages && (
+            {numPages !== null && numPages > 0 && (
               <FlipBook
                 width={pageWidth}
                 height={pageHeight}
@@ -104,7 +86,7 @@ export function CVFlipbook({ pdfUrl = "https://dhnaath.com/wp-content/uploads/20
                 style={{ margin: "0 auto" }}
               >
                 {/* Render pages dynamically based on numPages */}
-                {Array.from(new Array(numPages), (el, index) => (
+                {Array.from({ length: numPages }, (_, index) => (
                   <div key={`page_${index + 1}`} className="page bg-[#FFFFFF] shadow-sm overflow-hidden flex items-center justify-center">
                     <Page 
                       pageNumber={index + 1} 

@@ -1,9 +1,18 @@
-import React, { useState } from 'react';
+import { useEffect, useRef, useState, type ReactNode } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 
-export function FlipbookReveal({ children }: { children: React.ReactNode }) {
+export function FlipbookReveal({ children }: { children: ReactNode }) {
   const [revealed, setRevealed] = useState(false);
   const [isFlipped, setIsFlipped] = useState(false);
+  const revealTimeoutRef = useRef<number | null>(null);
+
+  useEffect(() => {
+    return () => {
+      if (revealTimeoutRef.current !== null) {
+        window.clearTimeout(revealTimeoutRef.current);
+      }
+    };
+  }, []);
 
   return (
     <div className="w-full flex flex-col md:flex-row gap-8 items-start" style={{ perspective: '1000px' }}>
@@ -22,7 +31,7 @@ export function FlipbookReveal({ children }: { children: React.ReactNode }) {
               onClick={() => {
                 if (!isFlipped) {
                   setIsFlipped(true);
-                  setTimeout(() => setRevealed(true), 800);
+                  revealTimeoutRef.current = window.setTimeout(() => setRevealed(true), 800);
                 }
               }}
               animate={{ rotateY: isFlipped ? 180 : 0 }}
